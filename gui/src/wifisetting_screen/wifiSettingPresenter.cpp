@@ -16,3 +16,8 @@ void wifiSettingPresenter::deactivate()
 {
 
 }
+
+void wifiSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

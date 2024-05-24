@@ -57,6 +57,8 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/notificationscreen_screen/Notif
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  touchgfx/framework/include/touchgfx/Color.hpp \
  generated/images/include/images/BitmapDatabase.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
@@ -174,6 +176,10 @@ touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgr
 touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 touchgfx/framework/include/touchgfx/Color.hpp:
 

@@ -12,6 +12,7 @@
 #include <touchgfx/containers/ScrollableContainer.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class NotificationScreenViewBase : public touchgfx::View<NotificationScreenPresenter>
 {
@@ -34,8 +35,19 @@ protected:
     touchgfx::TextArea textArea1;
     touchgfx::TextArea notification;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button1;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<NotificationScreenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

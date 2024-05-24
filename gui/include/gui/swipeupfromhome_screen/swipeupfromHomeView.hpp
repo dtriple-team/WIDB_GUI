@@ -11,9 +11,16 @@ public:
     virtual ~swipeupfromHomeView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void handleGestureEvent(const GestureEvent& evt); //rkdalfks
+
+    void handleSwipeUp(); //rkdalfks
 
 protected:
     swipeupfromHomePresenter presenter;
+
+private: //rkdalfks
+    int initialX; //rkdalfks
+    int initialY; //rkdaflks
 };
 
 #endif // SWIPEUPFROMHOMEVIEW_HPP

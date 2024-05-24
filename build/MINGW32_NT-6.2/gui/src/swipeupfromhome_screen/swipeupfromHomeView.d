@@ -57,7 +57,8 @@ build/MINGW32_NT-6.2/gui/src/swipeupfromhome_screen/swipeupfromHomeView.o: \
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- touchgfx/framework/include/touchgfx/containers/Slider.hpp
+ touchgfx/framework/include/touchgfx/containers/Slider.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp
 
 gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp:
 
@@ -174,3 +175,5 @@ touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
 touchgfx/framework/include/touchgfx/containers/Slider.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:

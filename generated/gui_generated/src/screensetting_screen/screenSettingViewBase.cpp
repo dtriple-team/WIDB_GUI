@@ -72,6 +72,12 @@ screenSettingViewBase::screenSettingViewBase() :
     batteryprogress.setValue(90);
     batteryprogress.setAnchorAtZero(true);
     add(batteryprogress);
+
+    button3.setXY(0, 0);
+    button3.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    button3.setVisible(false);
+    button3.setAction(buttonCallback);
+    add(button3);
 }
 
 screenSettingViewBase::~screenSettingViewBase()
@@ -99,5 +105,12 @@ void screenSettingViewBase::buttonCallbackHandler(const touchgfx::AbstractButton
         //When button2 clicked change screen to screenbrightnessSetting
         //Go to screenbrightnessSetting with screen transition towards East
         application().gotoscreenbrightnessSettingScreenCoverTransitionEast();
+    }
+    if (&src == &button3)
+    {
+        //Interaction1
+        //When button3 clicked change screen to SettingScreen
+        //Go to SettingScreen with screen transition towards West
+        application().gotoSettingScreenScreenWipeTransitionWest();
     }
 }

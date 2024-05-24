@@ -23,7 +23,6 @@ public:
     HomeScreenWithBiodataViewBase();
     virtual ~HomeScreenWithBiodataViewBase();
     virtual void setupScreen();
-    virtual void transitionBegins();
 
 protected:
     FrontendApplication& application() {
@@ -79,6 +78,7 @@ protected:
     touchgfx::TextArea Sleep;
     touchgfx::TextAreaWithTwoWildcards SleepValue;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button5;
 
     /*
      * Wildcard Buffers

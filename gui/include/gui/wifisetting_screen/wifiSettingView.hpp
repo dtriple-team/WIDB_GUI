@@ -11,7 +11,14 @@ public:
     virtual ~wifiSettingView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void handleGestureEvent(const GestureEvent& evt);
+
+    void handleSwipeRight();
 protected:
+
+private:
+    int initialX;
+    int initialY;
 };
 
 #endif // WIFISETTINGVIEW_HPP

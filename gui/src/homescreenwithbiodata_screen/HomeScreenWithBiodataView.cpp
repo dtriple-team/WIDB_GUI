@@ -1,8 +1,12 @@
 #include <gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp>
 #include "texts/TextKeysAndLanguages.hpp"
 #include <touchgfx/Color.hpp>
+#include <touchgfx/Color.hpp> //rkdalfks
+#include <touchgfx/hal/HAL.hpp> //rkdalfks
+#include <touchgfx/Utils.hpp> //rkdalfks
 
 HomeScreenWithBiodataView::HomeScreenWithBiodataView()
+	: initialX(0), initialY(0)
 {
 }
 
@@ -36,4 +40,31 @@ void HomeScreenWithBiodataView::handleTickEvent()
 		}
 		digitalClock.setTime24Hour(digitalHours, digitalMinutes, digitalSeconds);
 	}
+}
+
+void HomeScreenWithBiodataView::handleGestureEvent(const GestureEvent& evt) //rkdalfks
+{
+    if (evt.getType() == GestureEvent::SWIPE_VERTICAL)
+    {
+        int deltaY = evt.getVelocity();
+        if (deltaY > 0)
+        {
+            presenter->notifySwipeDown();
+        }
+        else if (deltaY < 0)
+        {
+        	presenter->notifySwipeUp();
+        }
+    }
+    HomeScreenWithBiodataViewBase::handleGestureEvent(evt);
+}
+
+void HomeScreenWithBiodataView::handleSwipeDown()
+{
+	application().gotoswipeupfromHomeScreenCoverTransitionNorth();
+}
+
+void HomeScreenWithBiodataView::handleSwipeUp()
+{
+	application().gotoNotificationScreenScreenCoverTransitionSouth();
 }

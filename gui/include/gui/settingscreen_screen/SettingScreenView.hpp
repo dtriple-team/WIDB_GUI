@@ -11,7 +11,15 @@ public:
     virtual ~SettingScreenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void handleGestureEvent(const GestureEvent& evt); //rkdalfks
+
+    void handleSwipeRight(); //rkdalfks
+
 protected:
+
+private: //rkdalfks
+    int initialX;
+    int initialY;
 };
 
 #endif // SETTINGSCREENVIEW_HPP

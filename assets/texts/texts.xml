@@ -294,11 +294,11 @@
       </Text>
       <Text Id="nonoti" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">No notifications</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">알림 없음</Translation>
       </Text>
       <Text Id="notification" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">Notification</Translation>
-        <Translation Language="Korean">설정</Translation>
+        <Translation Language="Korean">알림</Translation>
       </Text>
       <Text Id="screenbrightness" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">Screen brightness</Translation>

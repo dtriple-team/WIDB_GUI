@@ -16,3 +16,8 @@ void deviceInfoSettingPresenter::deactivate()
 {
 
 }
+
+void deviceInfoSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

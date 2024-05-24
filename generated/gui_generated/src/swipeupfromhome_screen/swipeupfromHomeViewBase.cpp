@@ -79,6 +79,12 @@ swipeupfromHomeViewBase::swipeupfromHomeViewBase() :
     image4.setXY(173, 210);
     image4.setBitmap(touchgfx::Bitmap(BITMAP_BRIGHTNESS_ID));
     add(image4);
+
+    button6.setXY(0, 0);
+    button6.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    button6.setVisible(false);
+    button6.setAction(buttonCallback);
+    add(button6);
 }
 
 swipeupfromHomeViewBase::~swipeupfromHomeViewBase()
@@ -99,5 +105,12 @@ void swipeupfromHomeViewBase::buttonCallbackHandler(const touchgfx::AbstractButt
         //When button1 clicked change screen to SettingScreen
         //Go to SettingScreen with screen transition towards North
         application().gotoSettingScreenScreenWipeTransitionNorth();
+    }
+    if (&src == &button6)
+    {
+        //Interaction1
+        //When button6 clicked change screen to HomeScreenWithBiodata
+        //Go to HomeScreenWithBiodata with screen transition towards South
+        application().gotoHomeScreenWithBiodataScreenSlideTransitionSouth();
     }
 }

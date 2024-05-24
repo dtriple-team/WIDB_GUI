@@ -16,3 +16,8 @@ void systemSettingPresenter::deactivate()
 {
 
 }
+
+void systemSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

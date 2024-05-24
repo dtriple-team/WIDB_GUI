@@ -25,6 +25,8 @@ public:
      */
     virtual void deactivate();
 
+    virtual void notifySwipeRight();
+
     virtual ~networkInfoSettingPresenter() {}
 
 private:

@@ -17,3 +17,7 @@ void SettingScreenPresenter::deactivate()
 
 }
 
+void SettingScreenPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

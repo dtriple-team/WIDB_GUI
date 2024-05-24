@@ -17,3 +17,7 @@ void screenbrightnessSettingPresenter::deactivate()
 
 }
 
+void screenbrightnessSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

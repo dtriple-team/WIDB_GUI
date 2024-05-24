@@ -16,3 +16,8 @@ void networkInfoSettingPresenter::deactivate()
 {
 
 }
+
+void networkInfoSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

@@ -16,3 +16,8 @@ void languageSettingPresenter::deactivate()
 {
 
 }
+
+void languageSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

@@ -40,6 +40,7 @@ protected:
     touchgfx::Button button1;
     touchgfx::Button button2;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button3;
 
 private:
 

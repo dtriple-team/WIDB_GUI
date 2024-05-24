@@ -89,6 +89,39 @@ void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenNoTransitionImpl()
     touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionWestImpl()
+{
+    touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenSlideTransitionSouth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoHomeScreenWithBiodataScreenSlideTransitionSouthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenSlideTransitionSouthImpl()
+{
+    touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionNorth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionNorthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionNorthImpl()
+{
+    touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::WipeTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // SleepScreen
 
 void FrontendApplicationBase::gotoSleepScreenScreenCoverTransitionEast()
@@ -141,6 +174,43 @@ void FrontendApplicationBase::gotoStepsScreenScreenCoverTransitionEastImpl()
     touchgfx::makeTransition<StepsScreenView, StepsScreenPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+// swipeupfromHome
+
+void FrontendApplicationBase::gotoswipeupfromHomeScreenCoverTransitionNorth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoswipeupfromHomeScreenCoverTransitionNorthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoswipeupfromHomeScreenCoverTransitionNorthImpl()
+{
+    touchgfx::makeTransition<swipeupfromHomeView, swipeupfromHomePresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoswipeupfromHomeScreenWipeTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoswipeupfromHomeScreenWipeTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoswipeupfromHomeScreenWipeTransitionWestImpl()
+{
+    touchgfx::makeTransition<swipeupfromHomeView, swipeupfromHomePresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// NotificationScreen
+
+void FrontendApplicationBase::gotoNotificationScreenScreenCoverTransitionSouth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoNotificationScreenScreenCoverTransitionSouthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoNotificationScreenScreenCoverTransitionSouthImpl()
+{
+    touchgfx::makeTransition<NotificationScreenView, NotificationScreenPresenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // SettingScreen
 
 void FrontendApplicationBase::gotoSettingScreenScreenWipeTransitionNorth()
@@ -154,6 +224,17 @@ void FrontendApplicationBase::gotoSettingScreenScreenWipeTransitionNorthImpl()
     touchgfx::makeTransition<SettingScreenView, SettingScreenPresenter, touchgfx::WipeTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+void FrontendApplicationBase::gotoSettingScreenScreenWipeTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSettingScreenScreenWipeTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSettingScreenScreenWipeTransitionWestImpl()
+{
+    touchgfx::makeTransition<SettingScreenView, SettingScreenPresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // screenSetting
 
 void FrontendApplicationBase::gotoscreenSettingScreenCoverTransitionEast()
@@ -165,6 +246,17 @@ void FrontendApplicationBase::gotoscreenSettingScreenCoverTransitionEast()
 void FrontendApplicationBase::gotoscreenSettingScreenCoverTransitionEastImpl()
 {
     touchgfx::makeTransition<screenSettingView, screenSettingPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoscreenSettingScreenWipeTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoscreenSettingScreenWipeTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoscreenSettingScreenWipeTransitionWestImpl()
+{
+    touchgfx::makeTransition<screenSettingView, screenSettingPresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // screenontimeSetting
@@ -243,6 +335,17 @@ void FrontendApplicationBase::gotoinformationSettingScreenCoverTransitionEast()
 void FrontendApplicationBase::gotoinformationSettingScreenCoverTransitionEastImpl()
 {
     touchgfx::makeTransition<informationSettingView, informationSettingPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoinformationSettingScreenWipeTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoinformationSettingScreenWipeTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoinformationSettingScreenWipeTransitionWestImpl()
+{
+    touchgfx::makeTransition<informationSettingView, informationSettingPresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // deviceInfoSetting

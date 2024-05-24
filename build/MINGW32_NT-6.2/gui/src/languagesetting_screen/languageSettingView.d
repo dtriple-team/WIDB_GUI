@@ -59,7 +59,8 @@ build/MINGW32_NT-6.2/gui/src/languagesetting_screen/languageSettingView.o: \
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp
+ touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp
 
 gui/include/gui/languagesetting_screen/languageSettingView.hpp:
 
@@ -180,3 +181,5 @@ touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgr
 touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:

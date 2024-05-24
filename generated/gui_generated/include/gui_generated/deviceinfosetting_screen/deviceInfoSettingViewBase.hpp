@@ -12,6 +12,7 @@
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class deviceInfoSettingViewBase : public touchgfx::View<deviceInfoSettingPresenter>
 {
@@ -37,8 +38,19 @@ protected:
     touchgfx::TextAreaWithOneWildcard textArea4;
     touchgfx::TextAreaWithOneWildcard textArea5;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button1;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<deviceInfoSettingViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

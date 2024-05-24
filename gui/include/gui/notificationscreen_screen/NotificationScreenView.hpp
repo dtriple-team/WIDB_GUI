@@ -11,7 +11,14 @@ public:
     virtual ~NotificationScreenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void handleGestureEvent(const GestureEvent& evt);
+
+    void handleSwipeDown();
 protected:
+
+private:
+    int initialX;
+    int initialY;
 };
 
 #endif // NOTIFICATIONSCREENVIEW_HPP

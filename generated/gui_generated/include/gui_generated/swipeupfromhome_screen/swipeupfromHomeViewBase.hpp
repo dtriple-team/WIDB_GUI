@@ -44,6 +44,7 @@ protected:
     touchgfx::ImageProgress batteryprogress;
     touchgfx::Slider slider1;
     touchgfx::Image image4;
+    touchgfx::Button button6;
 
 private:
 

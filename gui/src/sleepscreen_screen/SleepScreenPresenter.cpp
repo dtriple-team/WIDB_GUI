@@ -17,3 +17,8 @@ void SleepScreenPresenter::deactivate()
 
 }
 
+void SleepScreenPresenter::notifySwipeRight()
+{
+    view.handleSwipeRight();
+}
+

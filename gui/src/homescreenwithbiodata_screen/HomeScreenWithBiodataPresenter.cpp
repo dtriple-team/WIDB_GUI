@@ -15,3 +15,13 @@ void HomeScreenWithBiodataPresenter::deactivate()
 {
     // Deactivate code
 }
+
+void HomeScreenWithBiodataPresenter::notifySwipeDown() //rkdalfks
+{
+	view.handleSwipeDown();
+}
+
+void HomeScreenWithBiodataPresenter::notifySwipeUp()
+{
+	view.handleSwipeUp();
+}

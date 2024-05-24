@@ -284,6 +284,12 @@ HomeScreenWithBiodataViewBase::HomeScreenWithBiodataViewBase() :
     batteryprogress.setValue(90);
     batteryprogress.setAnchorAtZero(true);
     add(batteryprogress);
+
+    button5.setXY(0, 0);
+    button5.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    button5.setVisible(false);
+    button5.setAction(buttonCallback);
+    add(button5);
 }
 
 HomeScreenWithBiodataViewBase::~HomeScreenWithBiodataViewBase()
@@ -293,7 +299,7 @@ HomeScreenWithBiodataViewBase::~HomeScreenWithBiodataViewBase()
 
 void HomeScreenWithBiodataViewBase::setupScreen()
 {
-    transitionBegins();
+
 }
 
 void HomeScreenWithBiodataViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -326,13 +332,15 @@ void HomeScreenWithBiodataViewBase::buttonCallbackHandler(const touchgfx::Abstra
         //Go to SleepScreen with screen transition towards East
         application().gotoSleepScreenScreenCoverTransitionEast();
     }
-}
-
-void HomeScreenWithBiodataViewBase::transitionBegins()
-{
-    //Interaction1
-    //When screen transition begins set language Korean
-    //Change language to Korean
-    Texts::setLanguage(KOREAN);
-    invalidate();
+    if (&src == &button5)
+    {
+        //Interaction1
+        //When button5 clicked change screen to swipeupfromHome
+        //Go to swipeupfromHome with screen transition towards North
+        application().gotoswipeupfromHomeScreenCoverTransitionNorth();
+        //Interaction2
+        //When button5 clicked change screen to NotificationScreen
+        //Go to NotificationScreen with screen transition towards South
+        application().gotoNotificationScreenScreenCoverTransitionSouth();
+    }
 }

@@ -1,9 +1,13 @@
 #include <gui/screenontimesetting_screen/screenontimeSettingView.hpp>
 #include "texts/TextKeysAndLanguages.hpp"
+#include <touchgfx/Color.hpp>
+#include <touchgfx/hal/HAL.hpp>
+#include <touchgfx/Utils.hpp>
 
 screenontimeSettingView::screenontimeSettingView():
 scrollWheel1AnimateToCallback(this, &screenontimeSettingView::scrollWheel1AnimateToHandler),
-scrollWheel1ItemSelectedCallback(this, &screenontimeSettingView::scrollWheel1ItemSelectedHandler)
+scrollWheel1ItemSelectedCallback(this, &screenontimeSettingView::scrollWheel1ItemSelectedHandler),
+initialX(0), initialY(0)
 {
 
 }
@@ -52,4 +56,24 @@ void screenontimeSettingView::scrollWheel1AnimateToHandler(int16_t itemIndex)
 {
     // 여기에 스크롤 휠의 핸들링 로직 구현
     // 예: 스크롤 휠이 특정 아이템으로 이동할 때 수행할 작업
+}
+
+void screenontimeSettingView::handleGestureEvent(const GestureEvent& evt)
+{
+    if (evt.getType() == GestureEvent::SWIPE_HORIZONTAL)
+    {
+        int deltaX = evt.getVelocity();
+        if (deltaX > 0) // 오른쪽으로 스와이프
+        {
+            // 스와이프 이벤트 처리
+            presenter->notifySwipeRight();
+        }
+    }
+    screenontimeSettingViewBase::handleGestureEvent(evt);
+}
+
+void screenontimeSettingView::handleSwipeRight()
+{
+    // 화면 전환 코드
+    application().gotoscreenSettingScreenWipeTransitionWest();
 }

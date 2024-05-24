@@ -6,7 +6,8 @@
 #include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
-NotificationScreenViewBase::NotificationScreenViewBase()
+NotificationScreenViewBase::NotificationScreenViewBase() :
+    buttonCallback(this, &NotificationScreenViewBase::buttonCallbackHandler)
 {
     __background.setPosition(0, 0, 240, 280);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -28,7 +29,7 @@ NotificationScreenViewBase::NotificationScreenViewBase()
 
     add(settingscrollablecontainer);
 
-    notification.setPosition(0, 6, 240, 25);
+    notification.setPosition(0, 8, 240, 25);
     notification.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     notification.setLinespacing(0);
     notification.setTypedText(touchgfx::TypedText(T_NOTIFICATION));
@@ -43,6 +44,12 @@ NotificationScreenViewBase::NotificationScreenViewBase()
     batteryprogress.setValue(90);
     batteryprogress.setAnchorAtZero(true);
     add(batteryprogress);
+
+    button1.setXY(0, 0);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    button1.setVisible(false);
+    button1.setAction(buttonCallback);
+    add(button1);
 }
 
 NotificationScreenViewBase::~NotificationScreenViewBase()
@@ -53,4 +60,15 @@ NotificationScreenViewBase::~NotificationScreenViewBase()
 void NotificationScreenViewBase::setupScreen()
 {
 
+}
+
+void NotificationScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &button1)
+    {
+        //Interaction1
+        //When button1 clicked change screen to HomeScreenWithBiodata
+        //Go to HomeScreenWithBiodata with screen transition towards North
+        application().gotoHomeScreenWithBiodataScreenWipeTransitionNorth();
+    }
 }

@@ -17,3 +17,7 @@ void StepsScreenPresenter::deactivate()
 
 }
 
+void StepsScreenPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

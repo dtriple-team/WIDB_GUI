@@ -17,3 +17,7 @@ void soundnhapticsSettingPresenter::deactivate()
 
 }
 
+void soundnhapticsSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

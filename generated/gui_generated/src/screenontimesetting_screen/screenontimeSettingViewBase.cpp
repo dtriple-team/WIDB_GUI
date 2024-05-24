@@ -7,7 +7,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 screenontimeSettingViewBase::screenontimeSettingViewBase() :
-    updateItemCallback(this, &screenontimeSettingViewBase::updateItemCallbackHandler)
+    updateItemCallback(this, &screenontimeSettingViewBase::updateItemCallbackHandler),
+    buttonCallback(this, &screenontimeSettingViewBase::buttonCallbackHandler)
 {
     __background.setPosition(0, 0, 240, 280);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -64,6 +65,12 @@ screenontimeSettingViewBase::screenontimeSettingViewBase() :
     batteryprogress.setValue(90);
     batteryprogress.setAnchorAtZero(true);
     add(batteryprogress);
+
+    button2.setXY(0, 0);
+    button2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    button2.setVisible(false);
+    button2.setAction(buttonCallback);
+    add(button2);
 }
 
 screenontimeSettingViewBase::~screenontimeSettingViewBase()
@@ -81,6 +88,17 @@ void screenontimeSettingViewBase::setupScreen()
     for (int i = 0; i < scrollWheel1SelectedListItems.getNumberOfDrawables(); i++)
     {
         scrollWheel1SelectedListItems[i].initialize();
+    }
+}
+
+void screenontimeSettingViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &button2)
+    {
+        //Interaction1
+        //When button2 clicked change screen to screenSetting
+        //Go to screenSetting with screen transition towards West
+        application().gotoscreenSettingScreenWipeTransitionWest();
     }
 }
 

@@ -6,7 +6,8 @@
 #include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
-SleepScreenViewBase::SleepScreenViewBase()
+SleepScreenViewBase::SleepScreenViewBase() :
+    buttonCallback(this, &SleepScreenViewBase::buttonCallbackHandler)
 {
     __background.setPosition(0, 0, 240, 280);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -39,6 +40,12 @@ SleepScreenViewBase::SleepScreenViewBase()
     batteryprogress.setValue(90);
     batteryprogress.setAnchorAtZero(true);
     add(batteryprogress);
+
+    button1.setXY(0, 0);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
+    button1.setVisible(false);
+    button1.setAction(buttonCallback);
+    add(button1);
 }
 
 SleepScreenViewBase::~SleepScreenViewBase()
@@ -49,4 +56,15 @@ SleepScreenViewBase::~SleepScreenViewBase()
 void SleepScreenViewBase::setupScreen()
 {
 
+}
+
+void SleepScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &button1)
+    {
+        //Interaction1
+        //When button1 clicked change screen to HomeScreenWithBiodata
+        //Go to HomeScreenWithBiodata with screen transition towards West
+        application().gotoHomeScreenWithBiodataScreenWipeTransitionWest();
+    }
 }

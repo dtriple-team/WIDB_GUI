@@ -51,6 +51,7 @@ protected:
     touchgfx::Button button1;
     touchgfx::TextArea textArea2;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button2;
 
 private:
 
@@ -58,11 +59,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<screenontimeSettingViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
+    touchgfx::Callback<screenontimeSettingViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

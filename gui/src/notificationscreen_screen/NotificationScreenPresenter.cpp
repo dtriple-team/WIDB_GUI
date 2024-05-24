@@ -16,3 +16,8 @@ void NotificationScreenPresenter::deactivate()
 {
 
 }
+
+void NotificationScreenPresenter::notifySwipeDown()
+{
+	view.handleSwipeDown();
+}

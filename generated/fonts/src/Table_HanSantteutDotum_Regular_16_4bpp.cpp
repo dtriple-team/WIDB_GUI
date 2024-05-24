@@ -57,10 +57,11 @@ KEEP extern const touchgfx::GlyphNode glyphs_HanSantteutDotum_Regular_16_4bpp[] 
     {    90, 0xB3C4,  15,  12,  12,   0,  15,   0,   0, 0x00 },
     {   186, 0xB3D9,  15,  15,  12,   0,  15,   0,   0, 0x00 },
     {     0, 0xB9AC,  12,  15,  12,   1,  15,   0,   0, 0x00 },
-    {    90, 0xBA74,  13,  14,  12,   1,  15,   0,   0, 0x00 },
-    {   188, 0xBC15,  14,  15,  12,   1,  15,   0,   0, 0x00 },
-    {   293, 0xBC1D,  14,  15,  12,   1,  15,   0,   0, 0x00 },
-    {   398, 0xBCF4,  15,  12,  12,   0,  15,   0,   0, 0x00 },
+    {    90, 0xB9BC,  12,  14,  12,   1,  15,   0,   0, 0x00 },
+    {   174, 0xBA74,  13,  14,  12,   1,  15,   0,   0, 0x00 },
+    {   272, 0xBC15,  14,  15,  12,   1,  15,   0,   0, 0x00 },
+    {   377, 0xBC1D,  14,  15,  12,   1,  15,   0,   0, 0x00 },
+    {   482, 0xBCF4,  15,  12,  12,   0,  15,   0,   0, 0x00 },
     {     0, 0xC0B0,  15,  14,  12,   0,  15,   0,   0, 0x00 },
     {   112, 0xC0DD,  14,  15,  12,   0,  15,   0,   0, 0x00 },
     {   217, 0xC124,  14,  15,  13,   0,  15,   0,   0, 0x00 },
@@ -69,10 +70,12 @@ KEEP extern const touchgfx::GlyphNode glyphs_HanSantteutDotum_Regular_16_4bpp[] 
     {   538, 0xC2A4,  15,  12,  12,   0,  15,   0,   0, 0x00 },
     {   634, 0xC2DC,  13,  15,  12,   0,  15,   0,   0, 0x00 },
     {   739, 0xC2EC,  13,  15,  13,   0,  15,   0,   0, 0x00 },
-    {   844, 0xC5B4,  12,  15,  12,   1,  15,   0,   0, 0x00 },
-    {   934, 0xC5B8,  13,  14,  12,   1,  15,   0,   0, 0x00 },
-    {  1032, 0xC6CC,  14,  15,  12,   0,  15,   0,   0, 0x00 },
-    {  1137, 0xC74C,  15,  14,  12,   0,  15,   0,   0, 0x00 },
+    {   844, 0xC54C,  15,  14,  12,   0,  15,   0,   0, 0x00 },
+    {   956, 0xC5B4,  12,  15,  12,   1,  15,   0,   0, 0x00 },
+    {  1046, 0xC5B8,  13,  14,  12,   1,  15,   0,   0, 0x00 },
+    {  1144, 0xC5C6,  14,  14,  12,   1,  15,   0,   0, 0x00 },
+    {  1242, 0xC6CC,  14,  15,  12,   0,  15,   0,   0, 0x00 },
+    {  1347, 0xC74C,  15,  14,  12,   0,  15,   0,   0, 0x00 },
     {     0, 0xC808,  13,  14,  12,   1,  15,   0,   0, 0x00 },
     {    98, 0xC815,  13,  15,  12,   0,  15,   0,   0, 0x00 },
     {   203, 0xC870,  15,  12,  12,   0,  15,   0,   0, 0x00 },
@@ -140,6 +143,6 @@ touchgfx::GeneratedFont& getFont_HanSantteutDotum_Regular_16_4bpp();
 
 touchgfx::GeneratedFont& getFont_HanSantteutDotum_Regular_16_4bpp()
 {
-    static touchgfx::GeneratedFont HanSantteutDotum_Regular_16_4bpp(glyphs_HanSantteutDotum_Regular_16_4bpp, 81, 20, 16, 0, 0, 4, 1, 0, 1, unicodes_HanSantteutDotum_Regular_16_4bpp, kerning_HanSantteutDotum_Regular_16_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont HanSantteutDotum_Regular_16_4bpp(glyphs_HanSantteutDotum_Regular_16_4bpp, 84, 20, 16, 0, 0, 4, 1, 0, 1, unicodes_HanSantteutDotum_Regular_16_4bpp, kerning_HanSantteutDotum_Regular_16_4bpp, 63, 0, 0, 0);
     return HanSantteutDotum_Regular_16_4bpp;
 }

@@ -58,7 +58,8 @@ build/MINGW32_NT-6.2/gui/src/informationsetting_screen/informationSettingView.o:
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp
+ touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp
 
 gui/include/gui/informationsetting_screen/informationSettingView.hpp:
 
@@ -177,3 +178,5 @@ touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgr
 touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:

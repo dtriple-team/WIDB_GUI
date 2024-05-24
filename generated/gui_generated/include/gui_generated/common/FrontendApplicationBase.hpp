@@ -23,6 +23,12 @@ public:
     // HomeScreenWithBiodata
     void gotoHomeScreenWithBiodataScreenNoTransition();
 
+    void gotoHomeScreenWithBiodataScreenWipeTransitionWest();
+
+    void gotoHomeScreenWithBiodataScreenSlideTransitionSouth();
+
+    void gotoHomeScreenWithBiodataScreenWipeTransitionNorth();
+
     // SleepScreen
     void gotoSleepScreenScreenCoverTransitionEast();
 
@@ -35,11 +41,23 @@ public:
     // StepsScreen
     void gotoStepsScreenScreenCoverTransitionEast();
 
+    // swipeupfromHome
+    void gotoswipeupfromHomeScreenCoverTransitionNorth();
+
+    void gotoswipeupfromHomeScreenWipeTransitionWest();
+
+    // NotificationScreen
+    void gotoNotificationScreenScreenCoverTransitionSouth();
+
     // SettingScreen
     void gotoSettingScreenScreenWipeTransitionNorth();
 
+    void gotoSettingScreenScreenWipeTransitionWest();
+
     // screenSetting
     void gotoscreenSettingScreenCoverTransitionEast();
+
+    void gotoscreenSettingScreenWipeTransitionWest();
 
     // screenontimeSetting
     void gotoscreenontimeSettingScreenCoverTransitionEast();
@@ -58,6 +76,8 @@ public:
 
     // informationSetting
     void gotoinformationSettingScreenCoverTransitionEast();
+
+    void gotoinformationSettingScreenWipeTransitionWest();
 
     // deviceInfoSetting
     void gotodeviceInfoSettingScreenCoverTransitionEast();
@@ -85,6 +105,12 @@ protected:
     // HomeScreenWithBiodata
     void gotoHomeScreenWithBiodataScreenNoTransitionImpl();
 
+    void gotoHomeScreenWithBiodataScreenWipeTransitionWestImpl();
+
+    void gotoHomeScreenWithBiodataScreenSlideTransitionSouthImpl();
+
+    void gotoHomeScreenWithBiodataScreenWipeTransitionNorthImpl();
+
     // SleepScreen
     void gotoSleepScreenScreenCoverTransitionEastImpl();
 
@@ -97,11 +123,23 @@ protected:
     // StepsScreen
     void gotoStepsScreenScreenCoverTransitionEastImpl();
 
+    // swipeupfromHome
+    void gotoswipeupfromHomeScreenCoverTransitionNorthImpl();
+
+    void gotoswipeupfromHomeScreenWipeTransitionWestImpl();
+
+    // NotificationScreen
+    void gotoNotificationScreenScreenCoverTransitionSouthImpl();
+
     // SettingScreen
     void gotoSettingScreenScreenWipeTransitionNorthImpl();
 
+    void gotoSettingScreenScreenWipeTransitionWestImpl();
+
     // screenSetting
     void gotoscreenSettingScreenCoverTransitionEastImpl();
+
+    void gotoscreenSettingScreenWipeTransitionWestImpl();
 
     // screenontimeSetting
     void gotoscreenontimeSettingScreenCoverTransitionEastImpl();
@@ -120,6 +158,8 @@ protected:
 
     // informationSetting
     void gotoinformationSettingScreenCoverTransitionEastImpl();
+
+    void gotoinformationSettingScreenWipeTransitionWestImpl();
 
     // deviceInfoSetting
     void gotodeviceInfoSettingScreenCoverTransitionEastImpl();

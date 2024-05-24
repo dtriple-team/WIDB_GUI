@@ -16,3 +16,8 @@ void screenontimeSettingPresenter::deactivate()
 {
 
 }
+
+void screenontimeSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}

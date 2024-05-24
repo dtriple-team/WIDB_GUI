@@ -15,6 +15,7 @@ public:
 
     virtual void activate();
     virtual void deactivate();
+    virtual void notifySwipeUp();
 
     virtual ~swipeupfromHomePresenter() {};
 

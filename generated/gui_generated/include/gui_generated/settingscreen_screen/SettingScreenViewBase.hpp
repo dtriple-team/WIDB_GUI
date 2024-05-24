@@ -56,6 +56,7 @@ protected:
     touchgfx::Box box1;
     touchgfx::TextArea Setting;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button2;
 
 private:
 

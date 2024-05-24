@@ -56,7 +56,8 @@ build/MINGW32_NT-6.2/gui/src/wifisetting_screen/wifiSettingView.o: \
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
  touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp
+ touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp
 
 gui/include/gui/wifisetting_screen/wifiSettingView.hpp:
 
@@ -171,3 +172,5 @@ touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgr
 touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:

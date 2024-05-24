@@ -12,6 +12,7 @@
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class SleepScreenViewBase : public touchgfx::View<SleepScreenPresenter>
 {
@@ -33,8 +34,19 @@ protected:
     touchgfx::TextArea Sleep;
     touchgfx::TextAreaWithTwoWildcards textArea1;
     touchgfx::ImageProgress batteryprogress;
+    touchgfx::Button button1;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<SleepScreenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

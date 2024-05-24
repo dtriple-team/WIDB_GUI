@@ -16,3 +16,8 @@ void Spo2ScreenPresenter::deactivate()
 {
 
 }
+
+void Spo2ScreenPresenter::notifySwipeRight() //rkdalfks
+{
+	view.handleSwipeRight();
+}

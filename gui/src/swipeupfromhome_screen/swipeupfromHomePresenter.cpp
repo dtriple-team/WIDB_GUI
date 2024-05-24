@@ -16,3 +16,7 @@ void swipeupfromHomePresenter::deactivate()
     // Deactivate code
 }
 
+void swipeupfromHomePresenter::notifySwipeUp() //rkdalfks
+{
+	view.handleSwipeUp();
+}

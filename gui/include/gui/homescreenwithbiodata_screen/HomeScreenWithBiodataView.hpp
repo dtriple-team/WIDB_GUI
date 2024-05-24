@@ -14,6 +14,10 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void handleTickEvent();
+    virtual void handleGestureEvent(const GestureEvent& evt); //rkdalfks
+
+    void handleSwipeDown(); //rkdalfks
+    void handleSwipeUp();
 
 protected:
     int tickCounter;
@@ -21,7 +25,9 @@ protected:
     int digitalMinutes;
     int digitalSeconds;
 
-private:
+private: //rkdalfks
+    int initialX;
+    int initialY;
 };
 
 #endif // HOMESCREENWITHBIODATAVIEW_HPP

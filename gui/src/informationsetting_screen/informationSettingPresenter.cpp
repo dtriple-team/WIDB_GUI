@@ -16,3 +16,8 @@ void informationSettingPresenter::deactivate()
 {
 
 }
+
+void informationSettingPresenter::notifySwipeRight()
+{
+	view.handleSwipeRight();
+}
