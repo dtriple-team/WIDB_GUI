@@ -11,7 +11,6 @@
 #include <touchgfx/transitions/NoTransition.hpp>
 #include <touchgfx/transitions/CoverTransition.hpp>
 #include <touchgfx/transitions/WipeTransition.hpp>
-#include <touchgfx/transitions/SlideTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -30,8 +29,8 @@
 #include <gui/heartratedetail_screen/HeartrateDetailPresenter.hpp>
 #include <gui/spo2detail_screen/Spo2DetailView.hpp>
 #include <gui/spo2detail_screen/Spo2DetailPresenter.hpp>
-#include <gui/swipeupfromhome_screen/swipeupfromHomeView.hpp>
-#include <gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp>
+#include <gui/swipedownfromhome_screen/swipedownfromHomeView.hpp>
+#include <gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp>
 #include <gui/notificationscreen_screen/NotificationScreenView.hpp>
 #include <gui/notificationscreen_screen/NotificationScreenPresenter.hpp>
 #include <gui/settingscreen_screen/SettingScreenView.hpp>
@@ -93,7 +92,7 @@ public:
             touchgfx::meta::TypeList< StepsScreenView,
             touchgfx::meta::TypeList< HeartrateDetailView,
             touchgfx::meta::TypeList< Spo2DetailView,
-            touchgfx::meta::TypeList< swipeupfromHomeView,
+            touchgfx::meta::TypeList< swipedownfromHomeView,
             touchgfx::meta::TypeList< NotificationScreenView,
             touchgfx::meta::TypeList< SettingScreenView,
             touchgfx::meta::TypeList< screenSettingView,
@@ -129,7 +128,7 @@ public:
             touchgfx::meta::TypeList< StepsScreenPresenter,
             touchgfx::meta::TypeList< HeartrateDetailPresenter,
             touchgfx::meta::TypeList< Spo2DetailPresenter,
-            touchgfx::meta::TypeList< swipeupfromHomePresenter,
+            touchgfx::meta::TypeList< swipedownfromHomePresenter,
             touchgfx::meta::TypeList< NotificationScreenPresenter,
             touchgfx::meta::TypeList< SettingScreenPresenter,
             touchgfx::meta::TypeList< screenSettingPresenter,
@@ -164,7 +163,7 @@ public:
             touchgfx::meta::TypeList< CoverTransition<SOUTH>,
             touchgfx::meta::TypeList< WipeTransition<WEST>,
             touchgfx::meta::TypeList< WipeTransition<NORTH>,
-            touchgfx::meta::TypeList< SlideTransition<SOUTH>,
+            touchgfx::meta::TypeList< WipeTransition<SOUTH>,
             touchgfx::meta::Nil > > > > > >
             > GeneratedTransitionTypes;
 

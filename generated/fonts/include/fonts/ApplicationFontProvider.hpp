@@ -40,37 +40,49 @@ struct Typography
     static const touchgfx::FontId SIZE75 = 24;
     static const touchgfx::FontId SIZE75_AUTO_GENERATED_FOR_GB = 25;
     static const touchgfx::FontId SIZE75_AUTO_GENERATED_FOR_KOREAN = 26;
+    static const touchgfx::FontId SCROLLWHEELNOTSELECTED = 27;
+    static const touchgfx::FontId SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_GB = 28;
+    static const touchgfx::FontId SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_KOREAN = 29;
+    static const touchgfx::FontId SCROLLWHEELSELECTED = 30;
+    static const touchgfx::FontId SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_GB = 31;
+    static const touchgfx::FontId SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_KOREAN = 32;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId SIZE10 = 0;                                // HanSantteutDotum_Regular_10_4bpp
-    static const touchgfx::FontId SIZE10_AUTO_GENERATED_FOR_GB = 0;          // HanSantteutDotum_Regular_10_4bpp
-    static const touchgfx::FontId SIZE10_AUTO_GENERATED_FOR_KOREAN = 0;      // HanSantteutDotum_Regular_10_4bpp
-    static const touchgfx::FontId SIZE16 = 1;                                // HanSantteutDotum_Regular_16_4bpp
-    static const touchgfx::FontId SIZE16_AUTO_GENERATED_FOR_GB = 1;          // HanSantteutDotum_Regular_16_4bpp
-    static const touchgfx::FontId SIZE16_AUTO_GENERATED_FOR_KOREAN = 1;      // HanSantteutDotum_Regular_16_4bpp
-    static const touchgfx::FontId SIZE18 = 2;                                // verdana_18_4bpp
-    static const touchgfx::FontId SIZE18_AUTO_GENERATED_FOR_GB = 3;          // HanSantteutDotum_Regular_18_4bpp
-    static const touchgfx::FontId SIZE18_AUTO_GENERATED_FOR_KOREAN = 3;      // HanSantteutDotum_Regular_18_4bpp
-    static const touchgfx::FontId SIZE20 = 4;                                // HanSantteutDotum_Regular_20_4bpp
-    static const touchgfx::FontId SIZE20_AUTO_GENERATED_FOR_GB = 4;          // HanSantteutDotum_Regular_20_4bpp
-    static const touchgfx::FontId SIZE20_AUTO_GENERATED_FOR_KOREAN = 4;      // HanSantteutDotum_Regular_20_4bpp
-    static const touchgfx::FontId SIZE24 = 5;                                // HanSantteutDotum_Regular_24_4bpp
-    static const touchgfx::FontId SIZE24_AUTO_GENERATED_FOR_GB = 5;          // HanSantteutDotum_Regular_24_4bpp
-    static const touchgfx::FontId SIZE24_AUTO_GENERATED_FOR_KOREAN = 5;      // HanSantteutDotum_Regular_24_4bpp
-    static const touchgfx::FontId SIZE28_BOLD = 6;                           // HanSantteutDotum_Bold_28_4bpp
-    static const touchgfx::FontId SIZE28_BOLD_AUTO_GENERATED_FOR_GB = 6;     // HanSantteutDotum_Bold_28_4bpp
-    static const touchgfx::FontId SIZE28_BOLD_AUTO_GENERATED_FOR_KOREAN = 6; // HanSantteutDotum_Bold_28_4bpp
-    static const touchgfx::FontId SIZE32 = 7;                                // HanSantteutDotum_Regular_32_4bpp
-    static const touchgfx::FontId SIZE32_AUTO_GENERATED_FOR_GB = 7;          // HanSantteutDotum_Regular_32_4bpp
-    static const touchgfx::FontId SIZE32_AUTO_GENERATED_FOR_KOREAN = 7;      // HanSantteutDotum_Regular_32_4bpp
-    static const touchgfx::FontId SIZE32_BOLD = 8;                           // HanSantteutDotum_Bold_32_4bpp
-    static const touchgfx::FontId SIZE32_BOLD_AUTO_GENERATED_FOR_GB = 8;     // HanSantteutDotum_Bold_32_4bpp
-    static const touchgfx::FontId SIZE32_BOLD_AUTO_GENERATED_FOR_KOREAN = 8; // HanSantteutDotum_Bold_32_4bpp
-    static const touchgfx::FontId SIZE75 = 9;                                // verdanab_65_4bpp
-    static const touchgfx::FontId SIZE75_AUTO_GENERATED_FOR_GB = 9;          // verdanab_65_4bpp
-    static const touchgfx::FontId SIZE75_AUTO_GENERATED_FOR_KOREAN = 9;      // verdanab_65_4bpp
+    static const touchgfx::FontId SIZE10 = 0;                                           // HanSantteutDotum_Regular_10_4bpp
+    static const touchgfx::FontId SIZE10_AUTO_GENERATED_FOR_GB = 0;                     // HanSantteutDotum_Regular_10_4bpp
+    static const touchgfx::FontId SIZE10_AUTO_GENERATED_FOR_KOREAN = 0;                 // HanSantteutDotum_Regular_10_4bpp
+    static const touchgfx::FontId SIZE16 = 1;                                           // HanSantteutDotum_Regular_16_4bpp
+    static const touchgfx::FontId SIZE16_AUTO_GENERATED_FOR_GB = 1;                     // HanSantteutDotum_Regular_16_4bpp
+    static const touchgfx::FontId SIZE16_AUTO_GENERATED_FOR_KOREAN = 1;                 // HanSantteutDotum_Regular_16_4bpp
+    static const touchgfx::FontId SIZE18 = 2;                                           // verdana_18_4bpp
+    static const touchgfx::FontId SIZE18_AUTO_GENERATED_FOR_GB = 3;                     // HanSantteutDotum_Regular_18_4bpp
+    static const touchgfx::FontId SIZE18_AUTO_GENERATED_FOR_KOREAN = 3;                 // HanSantteutDotum_Regular_18_4bpp
+    static const touchgfx::FontId SIZE20 = 4;                                           // HanSantteutDotum_Regular_20_4bpp
+    static const touchgfx::FontId SIZE20_AUTO_GENERATED_FOR_GB = 4;                     // HanSantteutDotum_Regular_20_4bpp
+    static const touchgfx::FontId SIZE20_AUTO_GENERATED_FOR_KOREAN = 4;                 // HanSantteutDotum_Regular_20_4bpp
+    static const touchgfx::FontId SIZE24 = 5;                                           // HanSantteutDotum_Regular_24_4bpp
+    static const touchgfx::FontId SIZE24_AUTO_GENERATED_FOR_GB = 5;                     // HanSantteutDotum_Regular_24_4bpp
+    static const touchgfx::FontId SIZE24_AUTO_GENERATED_FOR_KOREAN = 5;                 // HanSantteutDotum_Regular_24_4bpp
+    static const touchgfx::FontId SIZE28_BOLD = 6;                                      // HanSantteutDotum_Bold_28_4bpp
+    static const touchgfx::FontId SIZE28_BOLD_AUTO_GENERATED_FOR_GB = 6;                // HanSantteutDotum_Bold_28_4bpp
+    static const touchgfx::FontId SIZE28_BOLD_AUTO_GENERATED_FOR_KOREAN = 6;            // HanSantteutDotum_Bold_28_4bpp
+    static const touchgfx::FontId SIZE32 = 7;                                           // HanSantteutDotum_Regular_32_4bpp
+    static const touchgfx::FontId SIZE32_AUTO_GENERATED_FOR_GB = 7;                     // HanSantteutDotum_Regular_32_4bpp
+    static const touchgfx::FontId SIZE32_AUTO_GENERATED_FOR_KOREAN = 7;                 // HanSantteutDotum_Regular_32_4bpp
+    static const touchgfx::FontId SIZE32_BOLD = 8;                                      // HanSantteutDotum_Bold_32_4bpp
+    static const touchgfx::FontId SIZE32_BOLD_AUTO_GENERATED_FOR_GB = 8;                // HanSantteutDotum_Bold_32_4bpp
+    static const touchgfx::FontId SIZE32_BOLD_AUTO_GENERATED_FOR_KOREAN = 8;            // HanSantteutDotum_Bold_32_4bpp
+    static const touchgfx::FontId SIZE75 = 9;                                           // verdanab_65_4bpp
+    static const touchgfx::FontId SIZE75_AUTO_GENERATED_FOR_GB = 9;                     // verdanab_65_4bpp
+    static const touchgfx::FontId SIZE75_AUTO_GENERATED_FOR_KOREAN = 9;                 // verdanab_65_4bpp
+    static const touchgfx::FontId SCROLLWHEELNOTSELECTED = 7;                           // HanSantteutDotum_Regular_32_4bpp
+    static const touchgfx::FontId SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_GB = 7;     // HanSantteutDotum_Regular_32_4bpp
+    static const touchgfx::FontId SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_KOREAN = 7; // HanSantteutDotum_Regular_32_4bpp
+    static const touchgfx::FontId SCROLLWHEELSELECTED = 8;                              // HanSantteutDotum_Bold_32_4bpp
+    static const touchgfx::FontId SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_GB = 8;        // HanSantteutDotum_Bold_32_4bpp
+    static const touchgfx::FontId SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_KOREAN = 8;    // HanSantteutDotum_Bold_32_4bpp
     static const uint16_t NUMBER_OF_FONTS = 10;
 };
 

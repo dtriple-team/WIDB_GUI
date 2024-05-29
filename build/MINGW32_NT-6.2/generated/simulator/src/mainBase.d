@@ -68,18 +68,17 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp \
- touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
- touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
+ touchgfx/framework/include/mvp/View.hpp \
+ touchgfx/framework/include/touchgfx/Screen.hpp \
+ touchgfx/framework/include/mvp/Presenter.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  touchgfx/framework/include/mvp/MVPApplication.hpp \
- touchgfx/framework/include/mvp/Presenter.hpp \
- touchgfx/framework/include/touchgfx/Screen.hpp \
  gui/include/gui/model/Model.hpp \
  touchgfx/framework/include/touchgfx/Utils.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp \
  generated/gui_generated/include/gui_generated/homescreenwithbiodata_screen/HomeScreenWithBiodataViewBase.hpp \
- touchgfx/framework/include/mvp/View.hpp \
  gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Box.hpp \
@@ -129,9 +128,9 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  gui/include/gui/spo2detail_screen/Spo2DetailView.hpp \
  generated/gui_generated/include/gui_generated/spo2detail_screen/Spo2DetailViewBase.hpp \
  gui/include/gui/spo2detail_screen/Spo2DetailPresenter.hpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp \
- generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp \
+ generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp \
  touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  touchgfx/framework/include/touchgfx/containers/Slider.hpp \
  gui/include/gui/notificationscreen_screen/NotificationScreenView.hpp \
@@ -345,29 +344,27 @@ touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp:
 
-touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
-
 gui/include/gui/common/FrontendApplication.hpp:
+
+touchgfx/framework/include/mvp/View.hpp:
+
+touchgfx/framework/include/touchgfx/Screen.hpp:
+
+touchgfx/framework/include/mvp/Presenter.hpp:
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 
 touchgfx/framework/include/mvp/MVPApplication.hpp:
 
-touchgfx/framework/include/mvp/Presenter.hpp:
-
-touchgfx/framework/include/touchgfx/Screen.hpp:
-
 gui/include/gui/model/Model.hpp:
 
 touchgfx/framework/include/touchgfx/Utils.hpp:
 
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
 gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp:
 
 generated/gui_generated/include/gui_generated/homescreenwithbiodata_screen/HomeScreenWithBiodataViewBase.hpp:
-
-touchgfx/framework/include/mvp/View.hpp:
 
 gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataPresenter.hpp:
 
@@ -467,11 +464,11 @@ generated/gui_generated/include/gui_generated/spo2detail_screen/Spo2DetailViewBa
 
 gui/include/gui/spo2detail_screen/Spo2DetailPresenter.hpp:
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp:
 
-generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp:
+generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp:
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 

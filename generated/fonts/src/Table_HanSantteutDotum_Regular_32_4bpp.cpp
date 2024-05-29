@@ -6,9 +6,17 @@ FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_HanSantteutDotum_Regular_32_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE = {
     {     0, 0x002D,  15,   3,  14,   2,  19,   0,   0, 0x00 },
     {    24, 0x0030,  17,  24,  23,   1,  19,   0,   0, 0x00 },
-    {   240, 0x0039,  17,  24,  23,   1,  19,   0,   0, 0x00 },
-    {   456, 0x003F,  14,  26,  25,   2,  21,   0,   0, 0x00 },
-    {   638, 0x0073,  14,  18,  17,   1,  15,   0,   0, 0x00 },
+    {   240, 0x0031,   8,  24,  23,   4,  19,   0,   0, 0x00 },
+    {   336, 0x0032,  16,  24,  23,   1,  19,   0,   0, 0x00 },
+    {   528, 0x0033,  15,  24,  23,   2,  19,   0,   0, 0x00 },
+    {   720, 0x0034,  19,  24,  23,   0,  19,   0,   0, 0x00 },
+    {   960, 0x0035,  16,  24,  23,   2,  19,   0,   0, 0x00 },
+    {  1152, 0x0036,  17,  24,  23,   1,  19,   0,   0, 0x00 },
+    {  1368, 0x0037,  16,  24,  23,   1,  19,   0,   0, 0x00 },
+    {  1560, 0x0038,  17,  24,  23,   1,  19,   0,   0, 0x00 },
+    {  1776, 0x0039,  17,  24,  23,   1,  19,   0,   0, 0x00 },
+    {  1992, 0x003F,  14,  26,  25,   2,  21,   0,   0, 0x00 },
+    {  2174, 0x0073,  14,  18,  17,   1,  15,   0,   0, 0x00 },
     {     0, 0xCD08,  28,  27,  26,   1,  30,   0,   0, 0x00 }
 };
 
@@ -54,6 +62,6 @@ touchgfx::GeneratedFont& getFont_HanSantteutDotum_Regular_32_4bpp();
 
 touchgfx::GeneratedFont& getFont_HanSantteutDotum_Regular_32_4bpp()
 {
-    static touchgfx::GeneratedFont HanSantteutDotum_Regular_32_4bpp(glyphs_HanSantteutDotum_Regular_32_4bpp, 6, 33, 32, 0, 0, 4, 1, 0, 0, unicodes_HanSantteutDotum_Regular_32_4bpp, kerning_HanSantteutDotum_Regular_32_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont HanSantteutDotum_Regular_32_4bpp(glyphs_HanSantteutDotum_Regular_32_4bpp, 14, 33, 32, 0, 0, 4, 1, 0, 0, unicodes_HanSantteutDotum_Regular_32_4bpp, kerning_HanSantteutDotum_Regular_32_4bpp, 63, 0, 0, 0);
     return HanSantteutDotum_Regular_32_4bpp;
 }

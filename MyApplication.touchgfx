@@ -691,7 +691,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "North",
-              "ActionComponent": "swipeupfromHome"
+              "ActionComponent": "swipedownfromHome"
             }
           },
           {
@@ -959,7 +959,9 @@
               "Green": 255,
               "Blue": 255
             },
-            "Wildcard1": {}
+            "Wildcard1": {
+              "TextId": "curStepsvalue"
+            }
           },
           {
             "Type": "ImageProgress",
@@ -1183,7 +1185,7 @@
         "Interactions": []
       },
       {
-        "Name": "swipeupfromHome",
+        "Name": "swipedownfromHome",
         "Components": [
           {
             "Type": "Image",
@@ -1323,7 +1325,7 @@
             "IndicatorMax": 138,
             "IndicatorMin": 1,
             "ValueMax": 100,
-            "InitValue": 60
+            "InitValue": 50
           },
           {
             "Type": "Image",
@@ -1367,7 +1369,7 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionType": "ScreenTransitionWipe",
               "ScreenTransitionDirection": "South",
               "ActionComponent": "HomeScreenWithBiodata"
             }
@@ -1879,7 +1881,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionWipe",
               "ScreenTransitionDirection": "West",
-              "ActionComponent": "swipeupfromHome"
+              "ActionComponent": "swipedownfromHome"
             }
           }
         ]
@@ -2103,7 +2105,7 @@
             "SelectedItemTemplateName": "setting_screenontime_selected",
             "ItemTemplateName": "setting_screenontime_notselected",
             "NumberofItems": 6,
-            "InitialElement": 1,
+            "InitialElement": 3,
             "Easing": "Back",
             "EasingOption": "Out",
             "SwipeAcceleration": 1.2,
@@ -2226,7 +2228,7 @@
             "IndicatorPos": 31,
             "IndicatorMax": 226,
             "ValueMax": 100,
-            "InitValue": 60
+            "InitValue": 50
           },
           {
             "Type": "Image",
@@ -4258,7 +4260,7 @@
             "Wildcard1": {
               "TextId": "notSelected",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 3
             }
           }
         ],
@@ -4291,7 +4293,7 @@
             "Wildcard1": {
               "TextId": "selected",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 3
             }
           }
         ],

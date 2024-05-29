@@ -25,7 +25,7 @@ public:
 
     void gotoHomeScreenWithBiodataScreenWipeTransitionWest();
 
-    void gotoHomeScreenWithBiodataScreenSlideTransitionSouth();
+    void gotoHomeScreenWithBiodataScreenWipeTransitionSouth();
 
     void gotoHomeScreenWithBiodataScreenWipeTransitionNorth();
 
@@ -41,10 +41,10 @@ public:
     // StepsScreen
     void gotoStepsScreenScreenCoverTransitionEast();
 
-    // swipeupfromHome
-    void gotoswipeupfromHomeScreenCoverTransitionNorth();
+    // swipedownfromHome
+    void gotoswipedownfromHomeScreenCoverTransitionNorth();
 
-    void gotoswipeupfromHomeScreenWipeTransitionWest();
+    void gotoswipedownfromHomeScreenWipeTransitionWest();
 
     // NotificationScreen
     void gotoNotificationScreenScreenCoverTransitionSouth();
@@ -107,7 +107,7 @@ protected:
 
     void gotoHomeScreenWithBiodataScreenWipeTransitionWestImpl();
 
-    void gotoHomeScreenWithBiodataScreenSlideTransitionSouthImpl();
+    void gotoHomeScreenWithBiodataScreenWipeTransitionSouthImpl();
 
     void gotoHomeScreenWithBiodataScreenWipeTransitionNorthImpl();
 
@@ -123,10 +123,10 @@ protected:
     // StepsScreen
     void gotoStepsScreenScreenCoverTransitionEastImpl();
 
-    // swipeupfromHome
-    void gotoswipeupfromHomeScreenCoverTransitionNorthImpl();
+    // swipedownfromHome
+    void gotoswipedownfromHomeScreenCoverTransitionNorthImpl();
 
-    void gotoswipeupfromHomeScreenWipeTransitionWestImpl();
+    void gotoswipedownfromHomeScreenWipeTransitionWestImpl();
 
     // NotificationScreen
     void gotoNotificationScreenScreenCoverTransitionSouthImpl();

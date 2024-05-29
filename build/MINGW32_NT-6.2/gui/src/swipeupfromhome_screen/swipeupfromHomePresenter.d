@@ -1,14 +1,14 @@
 build/MINGW32_NT-6.2/gui/src/swipeupfromhome_screen/swipeupfromHomePresenter.o: \
  gui/src/swipeupfromhome_screen/swipeupfromHomePresenter.cpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp \
  touchgfx/framework/include/mvp/Presenter.hpp \
  gui/include/gui/model/ModelListener.hpp gui/include/gui/model/Model.hpp \
  touchgfx/framework/include/touchgfx/Utils.hpp \
  touchgfx/framework/include/touchgfx/Bitmap.hpp \
  touchgfx/framework/include/touchgfx/hal/Types.hpp \
  touchgfx/framework/include/touchgfx/hal/Config.hpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp \
- generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp \
+ generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -58,7 +58,7 @@ build/MINGW32_NT-6.2/gui/src/swipeupfromhome_screen/swipeupfromHomePresenter.o: 
  touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  touchgfx/framework/include/touchgfx/containers/Slider.hpp
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp:
 
 touchgfx/framework/include/mvp/Presenter.hpp:
 
@@ -74,9 +74,9 @@ touchgfx/framework/include/touchgfx/hal/Types.hpp:
 
 touchgfx/framework/include/touchgfx/hal/Config.hpp:
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp:
 
-generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp:
+generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 

@@ -13,5 +13,6 @@ void setting_screenontime_notselected::initialize()
 
 void setting_screenontime_notselected::setElements(int16_t item)
 {
-
+	textArea1.invalidate();
+	Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%d", item);
 }

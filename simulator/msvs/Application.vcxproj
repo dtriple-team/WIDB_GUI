@@ -73,9 +73,6 @@
     <ClCompile Include="..\..\gui\src\systemsetting_screen\systemSettingPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\systemsetting_screen\systemSettingView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\systemsetting_screen\systemSettingViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\swipeupfromhome_screen\swipeupfromHomePresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\swipeupfromhome_screen\swipeupfromHomeView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\swipeupfromhome_screen\swipeupfromHomeViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\turnoffscreen_screen\turnoffScreenPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\turnoffscreen_screen\turnoffScreenView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\turnoffscreen_screen\turnoffScreenViewBase.cpp"/>
@@ -97,6 +94,9 @@
     <ClCompile Include="..\..\gui\src\numberkeyboard_screen\numberKeyboardPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\numberkeyboard_screen\numberKeyboardView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\numberkeyboard_screen\numberKeyboardViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\swipedownfromhome_screen\swipedownfromHomePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\swipedownfromhome_screen\swipedownfromHomeView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\swipedownfromhome_screen\swipedownfromHomeViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -299,9 +299,6 @@
     <ClInclude Include="..\..\gui\include\gui\systemsetting_screen\systemSettingPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\systemsetting_screen\systemSettingView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\systemsetting_screen\systemSettingViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\swipeupfromhome_screen\swipeupfromHomePresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\swipeupfromhome_screen\swipeupfromHomeView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\swipeupfromhome_screen\swipeupfromHomeViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\turnoffscreen_screen\turnoffScreenPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\turnoffscreen_screen\turnoffScreenView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\turnoffscreen_screen\turnoffScreenViewBase.hpp"/>
@@ -323,6 +320,9 @@
     <ClInclude Include="..\..\gui\include\gui\numberkeyboard_screen\numberKeyboardPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\numberkeyboard_screen\numberKeyboardView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\numberkeyboard_screen\numberKeyboardViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\swipedownfromhome_screen\swipedownfromHomePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\swipedownfromhome_screen\swipedownfromHomeView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\swipedownfromhome_screen\swipedownfromHomeViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

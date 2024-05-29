@@ -1,7 +1,7 @@
 build/MINGW32_NT-6.2/gui/src/swipeupfromhome_screen/swipeupfromHomeView.o: \
  gui/src/swipeupfromhome_screen/swipeupfromHomeView.cpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp \
- generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp \
+ generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -45,7 +45,7 @@ build/MINGW32_NT-6.2/gui/src/swipeupfromhome_screen/swipeupfromHomeView.o: \
  gui/include/gui/model/Model.hpp \
  touchgfx/framework/include/touchgfx/Utils.hpp \
  touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -60,9 +60,9 @@ build/MINGW32_NT-6.2/gui/src/swipeupfromhome_screen/swipeupfromHomeView.o: \
  touchgfx/framework/include/touchgfx/containers/Slider.hpp \
  touchgfx/framework/include/touchgfx/Color.hpp
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp:
 
-generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp:
+generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
@@ -150,7 +150,7 @@ touchgfx/framework/include/touchgfx/Utils.hpp:
 
 touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 

@@ -128,7 +128,6 @@ enum TEXTS
     T_GHI,
     T_DEF,
     T_ABC,
-    T_RIGHT_PARENTHESES,
     T_C_GROUP9,
     T_C_GROUP8,
     T_C_GROUP7,

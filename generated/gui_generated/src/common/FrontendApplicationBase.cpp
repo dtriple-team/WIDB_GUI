@@ -23,8 +23,8 @@
 #include <gui/heartratedetail_screen/HeartrateDetailPresenter.hpp>
 #include <gui/spo2detail_screen/Spo2DetailView.hpp>
 #include <gui/spo2detail_screen/Spo2DetailPresenter.hpp>
-#include <gui/swipeupfromhome_screen/swipeupfromHomeView.hpp>
-#include <gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp>
+#include <gui/swipedownfromhome_screen/swipedownfromHomeView.hpp>
+#include <gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp>
 #include <gui/notificationscreen_screen/NotificationScreenView.hpp>
 #include <gui/notificationscreen_screen/NotificationScreenPresenter.hpp>
 #include <gui/settingscreen_screen/SettingScreenView.hpp>
@@ -100,15 +100,15 @@ void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionWestI
     touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenSlideTransitionSouth()
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionSouth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoHomeScreenWithBiodataScreenSlideTransitionSouthImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionSouthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenSlideTransitionSouthImpl()
+void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionSouthImpl()
 {
-    touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<HomeScreenWithBiodataView, HomeScreenWithBiodataPresenter, touchgfx::WipeTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 void FrontendApplicationBase::gotoHomeScreenWithBiodataScreenWipeTransitionNorth()
@@ -174,28 +174,28 @@ void FrontendApplicationBase::gotoStepsScreenScreenCoverTransitionEastImpl()
     touchgfx::makeTransition<StepsScreenView, StepsScreenPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// swipeupfromHome
+// swipedownfromHome
 
-void FrontendApplicationBase::gotoswipeupfromHomeScreenCoverTransitionNorth()
+void FrontendApplicationBase::gotoswipedownfromHomeScreenCoverTransitionNorth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoswipeupfromHomeScreenCoverTransitionNorthImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoswipedownfromHomeScreenCoverTransitionNorthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoswipeupfromHomeScreenCoverTransitionNorthImpl()
+void FrontendApplicationBase::gotoswipedownfromHomeScreenCoverTransitionNorthImpl()
 {
-    touchgfx::makeTransition<swipeupfromHomeView, swipeupfromHomePresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<swipedownfromHomeView, swipedownfromHomePresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoswipeupfromHomeScreenWipeTransitionWest()
+void FrontendApplicationBase::gotoswipedownfromHomeScreenWipeTransitionWest()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoswipeupfromHomeScreenWipeTransitionWestImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoswipedownfromHomeScreenWipeTransitionWestImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoswipeupfromHomeScreenWipeTransitionWestImpl()
+void FrontendApplicationBase::gotoswipedownfromHomeScreenWipeTransitionWestImpl()
 {
-    touchgfx::makeTransition<swipeupfromHomeView, swipeupfromHomePresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<swipedownfromHomeView, swipedownfromHomePresenter, touchgfx::WipeTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // NotificationScreen

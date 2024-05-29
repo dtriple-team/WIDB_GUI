@@ -3,7 +3,9 @@
 
 #include <gui_generated/homescreenwithbiodata_screen/HomeScreenWithBiodataViewBase.hpp>
 #include <gui/homescreenwithbiodata_screen/HomeScreenWithBiodataPresenter.hpp>
-
+#include <touchgfx/Unicode.hpp> //rkdalfks
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp> //rkdalfks
+#include <ctime>
 
 class HomeScreenWithBiodataView : public HomeScreenWithBiodataViewBase
 {
@@ -20,12 +22,14 @@ public:
     void handleSwipeUp();
 
 protected:
+
+private: //rkdalfks
     int tickCounter;
+    time_t lastUpdateTime;
     int digitalHours;
     int digitalMinutes;
     int digitalSeconds;
 
-private: //rkdalfks
     int initialX;
     int initialY;
 };

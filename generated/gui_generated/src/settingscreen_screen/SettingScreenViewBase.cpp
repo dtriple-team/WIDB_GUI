@@ -211,8 +211,8 @@ void SettingScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton
     if (&src == &button2)
     {
         //Interaction1
-        //When button2 clicked change screen to swipeupfromHome
-        //Go to swipeupfromHome with screen transition towards West
-        application().gotoswipeupfromHomeScreenWipeTransitionWest();
+        //When button2 clicked change screen to swipedownfromHome
+        //Go to swipedownfromHome with screen transition towards West
+        application().gotoswipedownfromHomeScreenWipeTransitionWest();
     }
 }

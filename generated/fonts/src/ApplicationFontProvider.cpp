@@ -90,6 +90,24 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::SIZE75_AUTO_GENERATED_FOR_KOREAN:
         // verdanab_65_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+    case Typography::SCROLLWHEELNOTSELECTED:
+        // HanSantteutDotum_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_GB:
+        // HanSantteutDotum_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_KOREAN:
+        // HanSantteutDotum_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::SCROLLWHEELSELECTED:
+        // HanSantteutDotum_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+    case Typography::SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_GB:
+        // HanSantteutDotum_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+    case Typography::SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_KOREAN:
+        // HanSantteutDotum_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
     default:
         return 0;
     }

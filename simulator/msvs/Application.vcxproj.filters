@@ -382,18 +382,6 @@
     <Filter Include="Header Files\gui\turnoffscreen_screen">
       <UniqueIdentifier>1D14756B-2FE4-17EA-ADE5-6001640CAF47</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\swipeupfromhome_screen">
-      <UniqueIdentifier>A1E9E8B5-1595-5C37-3FF1-4922740F93AC</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\swipeupfromhome_screen">
-      <UniqueIdentifier>FEECF022-7886-6C73-ACE4-15C3656CF220</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\swipeupfromhome_screen">
-      <UniqueIdentifier>AE2867C2-2C1E-6E4C-0C0C-6ADD6E832D6D</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\swipeupfromhome_screen">
-      <UniqueIdentifier>984E64C6-5939-27D9-9F73-4186E62C1B8A</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\generated\gui_generated\turnoffscreen_screen">
       <UniqueIdentifier>FB5A41D3-09D6-4984-2C3F-F555D8C38DB8</UniqueIdentifier>
     </Filter>
@@ -471,6 +459,18 @@
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\numberkeyboard_screen">
       <UniqueIdentifier>47875472-5ED8-8CB2-2C83-32BB2A224B7B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\swipedownfromhome_screen">
+      <UniqueIdentifier>15BAC5E8-D500-614B-0CE9-5180D4C00819</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\swipedownfromhome_screen">
+      <UniqueIdentifier>F83FF0C7-5F28-DEA2-7937-C46A5940FE86</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\swipedownfromhome_screen">
+      <UniqueIdentifier>BB0964EB-CB0E-FDE5-5710-65446D1F34CD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\swipedownfromhome_screen">
+      <UniqueIdentifier>02EF4962-D23B-71B1-8F2E-24C39C101B42</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -660,15 +660,6 @@
     <ClCompile Include="..\..\generated\gui_generated\src\systemsetting_screen\systemSettingViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\systemsetting_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\swipeupfromhome_screen\swipeupfromHomePresenter.cpp">
-      <Filter>Source Files\gui\swipeupfromhome_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\swipeupfromhome_screen\swipeupfromHomeView.cpp">
-      <Filter>Source Files\gui\swipeupfromhome_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\swipeupfromhome_screen\swipeupfromHomeViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\swipeupfromhome_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\turnoffscreen_screen\turnoffScreenPresenter.cpp">
       <Filter>Source Files\gui\turnoffscreen_screen</Filter>
     </ClCompile>
@@ -731,6 +722,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\numberkeyboard_screen\numberKeyboardViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\numberkeyboard_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\swipedownfromhome_screen\swipedownfromHomePresenter.cpp">
+      <Filter>Source Files\gui\swipedownfromhome_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\swipedownfromhome_screen\swipedownfromHomeView.cpp">
+      <Filter>Source Files\gui\swipedownfromhome_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\swipedownfromhome_screen\swipedownfromHomeViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\swipedownfromhome_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1330,15 +1330,6 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\systemsetting_screen\systemSettingViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\systemsetting_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\swipeupfromhome_screen\swipeupfromHomePresenter.hpp">
-      <Filter>Header Files\gui\swipeupfromhome_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\swipeupfromhome_screen\swipeupfromHomeView.hpp">
-      <Filter>Header Files\gui\swipeupfromhome_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\swipeupfromhome_screen\swipeupfromHomeViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\swipeupfromhome_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\turnoffscreen_screen\turnoffScreenPresenter.hpp">
       <Filter>Header Files\gui\turnoffscreen_screen</Filter>
     </ClInclude>
@@ -1401,6 +1392,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\numberkeyboard_screen\numberKeyboardViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\numberkeyboard_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\swipedownfromhome_screen\swipedownfromHomePresenter.hpp">
+      <Filter>Header Files\gui\swipedownfromhome_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\swipedownfromhome_screen\swipedownfromHomeView.hpp">
+      <Filter>Header Files\gui\swipedownfromhome_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\swipedownfromhome_screen\swipedownfromHomeViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\swipedownfromhome_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

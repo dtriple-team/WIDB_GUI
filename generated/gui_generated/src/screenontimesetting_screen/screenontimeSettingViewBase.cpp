@@ -39,7 +39,7 @@ screenontimeSettingViewBase::screenontimeSettingViewBase() :
     scrollWheel1.setDrawables(scrollWheel1ListItems, updateItemCallback,
     
                           scrollWheel1SelectedListItems, updateItemCallback);
-    scrollWheel1.animateToItem(1, 0);
+    scrollWheel1.animateToItem(3, 0);
     add(scrollWheel1);
 
     image1.setXY(22, 107);

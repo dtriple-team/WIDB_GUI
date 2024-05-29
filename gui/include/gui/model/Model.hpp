@@ -4,6 +4,7 @@
 #include <stdint.h>
 
 #include <touchgfx/Utils.hpp>
+#include <touchgfx/Callback.hpp>
 
 class ModelListener;
 
@@ -23,27 +24,29 @@ class Model
 {
 public:
     Model();
-
-    /**
-     * Sets the modelListener to point to the currently active presenter. Called automatically
-     * when switching screen.
-     */
     void bind(ModelListener* listener)
     {
         modelListener = listener;
     }
-
-    /**
-     * This function will be called automatically every frame. Can be used to e.g. sample hardware
-     * peripherals or read events from the surrounding system and inject events to the GUI through
-     * the ModelListener interface.
-     */
     void tick();
+
+    void setToggleButton1State(bool state); //test
+    bool getToggleButton1State() const; //test
+    void setToggleButton2State(bool state); //test
+    bool getToggleButton2State() const; //test
+
+    touchgfx::GenericCallback<bool>& getToggleButton1StateChangedCallback() { return toggleButton1StateChangedCallback; } //test
+    touchgfx::GenericCallback<bool>& getToggleButton2StateChangedCallback() { return toggleButton2StateChangedCallback; } //test
+
 protected:
-    /**
-     * Pointer to the currently active presenter.
-     */
     ModelListener* modelListener;
+    int tickCounter; //rkdalfks
+
+private:
+    bool toggleButton1State; //test
+    bool toggleButton2State; //test
+    touchgfx::Callback<Model, bool> toggleButton1StateChangedCallback; //test
+    touchgfx::Callback<Model, bool> toggleButton2StateChangedCallback; //test
 };
 
 #endif /* MODEL_HPP */

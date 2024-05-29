@@ -49,12 +49,11 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp \
- touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
- touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
+ touchgfx/framework/include/mvp/View.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp \
  generated/gui_generated/include/gui_generated/homescreenwithbiodata_screen/HomeScreenWithBiodataViewBase.hpp \
- touchgfx/framework/include/mvp/View.hpp \
  gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Box.hpp \
@@ -106,9 +105,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/spo2detail_screen/Spo2DetailView.hpp \
  generated/gui_generated/include/gui_generated/spo2detail_screen/Spo2DetailViewBase.hpp \
  gui/include/gui/spo2detail_screen/Spo2DetailPresenter.hpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp \
- generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp \
- gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp \
+ generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp \
+ gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp \
  touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  touchgfx/framework/include/touchgfx/containers/Slider.hpp \
  gui/include/gui/notificationscreen_screen/NotificationScreenView.hpp \
@@ -170,7 +169,6 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/characterkeyboard_screen/characterKeyboardView.hpp \
  generated/gui_generated/include/gui_generated/characterkeyboard_screen/characterKeyboardViewBase.hpp \
  gui/include/gui/characterkeyboard_screen/characterKeyboardPresenter.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
  touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp \
  touchgfx/framework/include/touchgfx/lcd/LCD24DebugPrinter.hpp
 
@@ -272,17 +270,15 @@ touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp:
 
-touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
-
 gui/include/gui/common/FrontendApplication.hpp:
+
+touchgfx/framework/include/mvp/View.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
 gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp:
 
 generated/gui_generated/include/gui_generated/homescreenwithbiodata_screen/HomeScreenWithBiodataViewBase.hpp:
-
-touchgfx/framework/include/mvp/View.hpp:
 
 gui/include/gui/homescreenwithbiodata_screen/HomeScreenWithBiodataPresenter.hpp:
 
@@ -386,11 +382,11 @@ generated/gui_generated/include/gui_generated/spo2detail_screen/Spo2DetailViewBa
 
 gui/include/gui/spo2detail_screen/Spo2DetailPresenter.hpp:
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomeView.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomeView.hpp:
 
-generated/gui_generated/include/gui_generated/swipeupfromhome_screen/swipeupfromHomeViewBase.hpp:
+generated/gui_generated/include/gui_generated/swipedownfromhome_screen/swipedownfromHomeViewBase.hpp:
 
-gui/include/gui/swipeupfromhome_screen/swipeupfromHomePresenter.hpp:
+gui/include/gui/swipedownfromhome_screen/swipedownfromHomePresenter.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
@@ -513,8 +509,6 @@ gui/include/gui/characterkeyboard_screen/characterKeyboardView.hpp:
 generated/gui_generated/include/gui_generated/characterkeyboard_screen/characterKeyboardViewBase.hpp:
 
 gui/include/gui/characterkeyboard_screen/characterKeyboardPresenter.hpp:
-
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
 touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:
 

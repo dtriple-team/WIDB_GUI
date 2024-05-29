@@ -7,15 +7,16 @@ KEEP extern const touchgfx::GlyphNode glyphs_HanSantteutDotum_Regular_20_4bpp[] 
     {     0, 0x0020,   0,   0,   0,   0,   5,   0,   0, 0x00 },
     {     0, 0x002D,  10,   3,   9,   1,  12,   0,   0, 0x00 },
     {    15, 0x0030,  10,  16,  15,   1,  12,   0,   0, 0x00 },
-    {    95, 0x0032,  10,  16,  15,   1,  12,   0,   0, 0x00 },
-    {   175, 0x0034,  12,  16,  15,   0,  12,   0,   0, 0x00 },
-    {   271, 0x003F,   9,  17,  16,   1,  13,   0,   0, 0x00 },
-    {   356, 0x004E,  12,  16,  15,   1,  14,   0,   0, 0x00 },
-    {   452, 0x0054,  13,  16,  15,   0,  12,   0,   0, 0x00 },
-    {   564, 0x0065,  11,  12,  11,   0,  11,   0,   1, 0x00 },
-    {   636, 0x0074,   7,  15,  14,   0,   7,   0,   0, 0x00 },
-    {   696, 0x0077,  16,  12,  11,   0,  16,   1,   1, 0x00 },
-    {   792, 0x0078,  11,  12,  11,   0,  11,   2,   1, 0x00 },
+    {    95, 0x0031,   6,  16,  15,   2,  12,   0,   0, 0x00 },
+    {   143, 0x0032,  10,  16,  15,   1,  12,   0,   0, 0x00 },
+    {   223, 0x0033,  10,  16,  15,   1,  12,   0,   0, 0x00 },
+    {   303, 0x0034,  12,  16,  15,   0,  12,   0,   0, 0x00 },
+    {   399, 0x0035,  10,  16,  15,   1,  12,   0,   0, 0x00 },
+    {   479, 0x0036,  10,  16,  15,   1,  12,   0,   0, 0x00 },
+    {   559, 0x0037,  11,  16,  15,   0,  12,   0,   0, 0x00 },
+    {   655, 0x0038,  11,  16,  15,   0,  12,   0,   0, 0x00 },
+    {   751, 0x0039,  10,  16,  15,   1,  12,   0,   0, 0x00 },
+    {   831, 0x003F,   9,  17,  16,   1,  13,   0,   0, 0x00 },
     {     0, 0xC6D4,  16,  19,  16,   1,  19,   0,   0, 0x00 },
     {   152, 0xC77C,  16,  19,  16,   1,  19,   0,   0, 0x00 }
 };
@@ -61,6 +62,6 @@ touchgfx::GeneratedFont& getFont_HanSantteutDotum_Regular_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_HanSantteutDotum_Regular_20_4bpp()
 {
-    static touchgfx::GeneratedFont HanSantteutDotum_Regular_20_4bpp(glyphs_HanSantteutDotum_Regular_20_4bpp, 14, 23, 20, 0, 0, 4, 1, 0, 1, unicodes_HanSantteutDotum_Regular_20_4bpp, kerning_HanSantteutDotum_Regular_20_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont HanSantteutDotum_Regular_20_4bpp(glyphs_HanSantteutDotum_Regular_20_4bpp, 15, 23, 20, 0, 0, 4, 1, 0, 0, unicodes_HanSantteutDotum_Regular_20_4bpp, kerning_HanSantteutDotum_Regular_20_4bpp, 63, 0, 0, 0);
     return HanSantteutDotum_Regular_20_4bpp;
 }

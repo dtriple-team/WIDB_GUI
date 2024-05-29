@@ -35,5 +35,5 @@ void SettingScreenView::handleGestureEvent(const GestureEvent& evt)
 
 void SettingScreenView::handleSwipeRight()
 {
-	application().gotoswipeupfromHomeScreenWipeTransitionWest();
+	application().gotoswipedownfromHomeScreenWipeTransitionWest();
 }

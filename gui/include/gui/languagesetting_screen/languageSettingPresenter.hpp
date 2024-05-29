@@ -3,6 +3,7 @@
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 using namespace touchgfx;
 

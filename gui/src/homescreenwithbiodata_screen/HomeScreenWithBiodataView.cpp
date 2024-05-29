@@ -1,12 +1,13 @@
 #include <gui/homescreenwithbiodata_screen/HomeScreenWithBiodataView.hpp>
 #include "texts/TextKeysAndLanguages.hpp"
-#include <touchgfx/Color.hpp>
 #include <touchgfx/Color.hpp> //rkdalfks
 #include <touchgfx/hal/HAL.hpp> //rkdalfks
 #include <touchgfx/Utils.hpp> //rkdalfks
+#include <ctime> //rkdalfks
 
 HomeScreenWithBiodataView::HomeScreenWithBiodataView()
-	: initialX(0), initialY(0)
+	: tickCounter(0), lastUpdateTime(0), digitalHours(0), digitalMinutes(0), digitalSeconds(0),
+	  initialX(0), initialY(0)
 {
 }
 
@@ -14,9 +15,18 @@ void HomeScreenWithBiodataView::setupScreen()
 {
     HomeScreenWithBiodataViewBase::setupScreen();
 
-    digitalHours = digitalClock.getCurrentHour();
-    digitalMinutes = digitalClock.getCurrentMinute();
-    digitalSeconds = digitalClock.getCurrentSecond();
+	time(&lastUpdateTime);
+	struct tm* timeinfo = localtime(&lastUpdateTime);
+
+	touchgfx::Unicode::snprintf(dateBuffer1, DATEBUFFER1_SIZE, "%02d", timeinfo->tm_mon+1);
+	touchgfx::Unicode::snprintf(dateBuffer2, DATEBUFFER2_SIZE, "%02d", timeinfo->tm_mday);
+	date.invalidate();
+
+	Unicode::snprintf(yearBuffer, YEAR_SIZE, "%04d", timeinfo->tm_year+1900);
+	year.invalidate();
+
+	digitalClock.setTime24Hour(timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
+	digitalClock.invalidate();
 }
 
 void HomeScreenWithBiodataView::tearDownScreen()
@@ -28,17 +38,21 @@ void HomeScreenWithBiodataView::handleTickEvent()
 {
 	tickCounter++;
 
-	if(tickCounter % 60 == 0){
-		if(++digitalSeconds >= 60){
-			digitalSeconds=0;
-			if(++digitalMinutes >= 60){
-				digitalMinutes=0;
-				if(++digitalHours >=24){
-					digitalHours = 0;
-				}
-			}
+	if (tickCounter % 60 == 0) // 1초마다 업데이트
+	{
+		time_t currentTime;
+		time(&currentTime);
+		double secondsPassed = difftime(currentTime, lastUpdateTime);
+
+		if (secondsPassed >= 1)
+		{
+			struct tm* timeinfo = localtime(&currentTime);
+
+			digitalClock.setTime24Hour(timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
+			digitalClock.invalidate();
+
+			lastUpdateTime = currentTime; // 업데이트된 시간 저장
 		}
-		digitalClock.setTime24Hour(digitalHours, digitalMinutes, digitalSeconds);
 	}
 }
 
@@ -61,7 +75,7 @@ void HomeScreenWithBiodataView::handleGestureEvent(const GestureEvent& evt) //rk
 
 void HomeScreenWithBiodataView::handleSwipeDown()
 {
-	application().gotoswipeupfromHomeScreenCoverTransitionNorth();
+	application().gotoswipedownfromHomeScreenCoverTransitionNorth();
 }
 
 void HomeScreenWithBiodataView::handleSwipeUp()

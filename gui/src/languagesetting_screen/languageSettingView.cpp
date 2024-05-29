@@ -1,4 +1,5 @@
 #include <gui/languagesetting_screen/languageSettingView.hpp>
+#include <texts/TextKeysAndLanguages.hpp> //rkdalfks
 #include <touchgfx/Color.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <touchgfx/Utils.hpp>
@@ -12,6 +13,7 @@ languageSettingView::languageSettingView()
 void languageSettingView::setupScreen()
 {
     languageSettingViewBase::setupScreen();
+    updateLanguageSelection();
 }
 
 void languageSettingView::tearDownScreen()
@@ -37,4 +39,20 @@ void languageSettingView::handleSwipeRight() //rkdalfks
 {
     // 화면 전환 코드
     application().gotoSettingScreenScreenWipeTransitionWest();
+}
+
+void languageSettingView::updateLanguageSelection()
+{
+	if (Texts::getLanguage() == KOREAN)
+	    {
+	        radioButton1.setSelected(true);
+	        radioButton2.setSelected(false);
+	    }
+	    else if (Texts::getLanguage() == GB)
+	    {
+	        radioButton1.setSelected(false);
+	        radioButton2.setSelected(true);
+	    }
+	    radioButton1.invalidate();
+	    radioButton2.invalidate();
 }

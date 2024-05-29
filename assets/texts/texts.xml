@@ -145,8 +145,8 @@
         <Translation Language="Korean">&lt;value&gt;</Translation>
       </Text>
       <Text Id="curYearvalue" Alignment="Left" TypographyId="size20">
-        <Translation Language="GB">2024</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="GB">0000</Translation>
+        <Translation Language="Korean">0000</Translation>
       </Text>
       <Text Id="curDate" Alignment="Left" TypographyId="size18">
         <Translation Language="GB">00</Translation>
@@ -198,7 +198,7 @@
       </Text>
       <Text Id="soundnhaptics" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">Sound &amp; Haptics</Translation>
-        <Translation Language="Korean">화면 꺼짐 시간</Translation>
+        <Translation Language="Korean">소리 및 진동</Translation>
       </Text>
       <Text Id="soundText" Alignment="Left" TypographyId="size16">
         <Translation Language="GB">Sound</Translation>
@@ -272,11 +272,11 @@
         <Translation Language="GB">Device turns off&#10;after &lt;value&gt; seconds.</Translation>
         <Translation Language="Korean">&lt;value&gt;초 후에&#10;장치가 꺼집니다.</Translation>
       </Text>
-      <Text Id="__SingleUse_3KO8" Alignment="Center" TypographyId="size32_Bold">
+      <Text Id="__SingleUse_3KO8" Alignment="Center" TypographyId="scrollWheelselected">
         <Translation Language="GB">&lt;value&gt;s</Translation>
         <Translation Language="Korean">&lt;value&gt;초</Translation>
       </Text>
-      <Text Id="__SingleUse_K9CO" Alignment="Center" TypographyId="size32">
+      <Text Id="__SingleUse_K9CO" Alignment="Center" TypographyId="scrollWheelnotselected">
         <Translation Language="GB">&lt;value&gt;s</Translation>
         <Translation Language="Korean">&lt;value&gt;초</Translation>
       </Text>
@@ -286,11 +286,11 @@
       </Text>
       <Text Id="searchingwifi" Alignment="Left" TypographyId="size16">
         <Translation Language="GB">Searching WiFi...</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">WiFi 검색</Translation>
       </Text>
       <Text Id="wifisetting" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">WiFi setting</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">WiFi 설정</Translation>
       </Text>
       <Text Id="nonoti" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">No notifications</Translation>
@@ -302,7 +302,7 @@
       </Text>
       <Text Id="screenbrightness" Alignment="Center" TypographyId="size16">
         <Translation Language="GB">Screen brightness</Translation>
-        <Translation Language="Korean">화면 꺼짐 시간</Translation>
+        <Translation Language="Korean">화면 밝기 조절</Translation>
       </Text>
     </TextGroup>
     <TextGroup Id="Information">
@@ -384,137 +384,132 @@
       </Text>
       <Text Id="wifimacaddLabel" Alignment="Left" TypographyId="size24">
         <Translation Language="GB">WiFi MAC ADD</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">WiFi MAC ADD</Translation>
       </Text>
       <Text Id="blemacaddLable" Alignment="Center" TypographyId="size24">
         <Translation Language="GB">BLE MAC ADD</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">BLE MAC ADD</Translation>
       </Text>
     </TextGroup>
     <TextGroup Id="keyboard">
       <Text Id="0" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">0</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">0</Translation>
       </Text>
       <Text Id="9" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">9</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">9</Translation>
       </Text>
       <Text Id="8" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">8</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">8</Translation>
       </Text>
       <Text Id="7" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">7</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">7</Translation>
       </Text>
       <Text Id="6" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">6</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">6</Translation>
       </Text>
       <Text Id="5" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">5</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">5</Translation>
       </Text>
       <Text Id="4" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">4</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">4</Translation>
       </Text>
       <Text Id="3" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">3</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">3</Translation>
       </Text>
       <Text Id="2" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">2</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">2</Translation>
       </Text>
       <Text Id="1" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">1</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">1</Translation>
       </Text>
       <Text Id="change" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">a/1/!</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">a/1/!</Translation>
       </Text>
       <Text Id="yz" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">yz</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">yz</Translation>
       </Text>
       <Text Id="vwx" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">vwx</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">vwx</Translation>
       </Text>
       <Text Id="stu" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">stu</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">stu</Translation>
       </Text>
       <Text Id="pqr" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">pqr</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">pqr</Translation>
       </Text>
       <Text Id="mno" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">mno</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">mno</Translation>
       </Text>
       <Text Id="jkl" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">jkl</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">jkl</Translation>
       </Text>
       <Text Id="ghi" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">ghi</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">ghi</Translation>
       </Text>
       <Text Id="def" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">def</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">def</Translation>
       </Text>
       <Text Id="abc" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">abc</Translation>
-        <Translation Language="Korean">New Text</Translation>
-      </Text>
-    </TextGroup>
-    <TextGroup Id="Unsorted">
-      <Text Id="right_parentheses" Alignment="Center" TypographyId="size18">
-        <Translation Language="GB">)</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">abc</Translation>
       </Text>
       <Text Id="C_group9" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">% ` /</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">% ` /</Translation>
       </Text>
       <Text Id="C_group8" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">: ; ^</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">: ; ^</Translation>
       </Text>
       <Text Id="C_group7" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">&amp;* _</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">&amp;* _</Translation>
       </Text>
       <Text Id="C_group6" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">@ # $</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">@ # $</Translation>
       </Text>
       <Text Id="C_group5" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">~=-+</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">~=-+</Translation>
       </Text>
       <Text Id="C_group4" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">( ) |   </Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">( ) |   </Translation>
       </Text>
       <Text Id="C_group3" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">{ }[ ]</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">{ }[ ]</Translation>
       </Text>
       <Text Id="C_group2" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">' "      </Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">' "      </Translation>
       </Text>
       <Text Id="C_group1" Alignment="Center" TypographyId="size18">
         <Translation Language="GB">. ,?!</Translation>
-        <Translation Language="Korean">New Text</Translation>
+        <Translation Language="Korean">. ,?!</Translation>
       </Text>
     </TextGroup>
+    <TextGroup Id="Unsorted" />
   </Texts>
   <Typographies>
     <Typography Id="size10" Font="HanSantteutDotum-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
@@ -529,7 +524,7 @@
       <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
       <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size20" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+    <Typography Id="size20" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
       <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
       <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
@@ -552,6 +547,14 @@
     <Typography Id="size75" Font="verdanab.ttf" Size="65" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM">
       <LanguageSetting Language="GB" Font="verdanab.ttf" Size="65" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
       <LanguageSetting Language="Korean" Font="verdanab.ttf" Size="65" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    </Typography>
+    <Typography Id="scrollWheelnotselected" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
+      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    </Typography>
+    <Typography Id="scrollWheelselected" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
+      <LanguageSetting Language="GB" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     </Typography>
   </Typographies>
 </TextDatabase>

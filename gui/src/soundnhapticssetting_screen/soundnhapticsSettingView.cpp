@@ -1,10 +1,13 @@
 #include <gui/soundnhapticssetting_screen/soundnhapticsSettingView.hpp>
+#include <gui/model/Model.hpp>
 #include <touchgfx/Color.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <touchgfx/Utils.hpp>
 
 soundnhapticsSettingView::soundnhapticsSettingView()
-	: initialX(0), initialY(0)
+	: toggleButton1ClickedCallback(this, &soundnhapticsSettingView::toggleButton1Clicked), //test
+	  toggleButton2ClickedCallback(this, &soundnhapticsSettingView::toggleButton2Clicked),
+	  initialX(0), initialY(0)
 {
 
 }
@@ -12,6 +15,10 @@ soundnhapticsSettingView::soundnhapticsSettingView()
 void soundnhapticsSettingView::setupScreen()
 {
     soundnhapticsSettingViewBase::setupScreen();
+    toggleButton1.setAction(toggleButton1ClickedCallback);
+    toggleButton2.setAction(toggleButton2ClickedCallback);
+    toggleButton1.forceState(presenter->getToggleButton1State()); //test
+    toggleButton2.forceState(presenter->getToggleButton2State()); //test
 }
 
 void soundnhapticsSettingView::tearDownScreen()
@@ -24,9 +31,8 @@ void soundnhapticsSettingView::handleGestureEvent(const GestureEvent& evt)
     if (evt.getType() == GestureEvent::SWIPE_HORIZONTAL)
     {
         int deltaX = evt.getVelocity();
-        if (deltaX > 0) // 오른쪽으로 스와이프
+        if (deltaX > 0)
         {
-            // 스와이프 이벤트 처리
             presenter->notifySwipeRight();
         }
     }
@@ -35,6 +41,27 @@ void soundnhapticsSettingView::handleGestureEvent(const GestureEvent& evt)
 
 void soundnhapticsSettingView::handleSwipeRight()
 {
-    // 화면 전환 코드
     application().gotoSettingScreenScreenWipeTransitionWest();
+}
+
+void soundnhapticsSettingView::toggleButton1Clicked(const touchgfx::AbstractButton& source)
+{
+    bool newState = toggleButton1.getState();
+    presenter->updateToggleButton1State(newState);
+}
+
+void soundnhapticsSettingView::updateToggleButton1State(bool state)
+{
+    toggleButton1.forceState(state);
+}
+
+void soundnhapticsSettingView::toggleButton2Clicked(const touchgfx::AbstractButton& source)
+{
+    bool newState = toggleButton2.getState();
+    presenter->updateToggleButton2State(newState);
+}
+
+void soundnhapticsSettingView::updateToggleButton2State(bool state)
+{
+    toggleButton2.forceState(state);
 }

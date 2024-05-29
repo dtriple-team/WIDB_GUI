@@ -335,9 +335,9 @@ void HomeScreenWithBiodataViewBase::buttonCallbackHandler(const touchgfx::Abstra
     if (&src == &button5)
     {
         //Interaction1
-        //When button5 clicked change screen to swipeupfromHome
-        //Go to swipeupfromHome with screen transition towards North
-        application().gotoswipeupfromHomeScreenCoverTransitionNorth();
+        //When button5 clicked change screen to swipedownfromHome
+        //Go to swipedownfromHome with screen transition towards North
+        application().gotoswipedownfromHomeScreenCoverTransitionNorth();
         //Interaction2
         //When button5 clicked change screen to NotificationScreen
         //Go to NotificationScreen with screen transition towards South

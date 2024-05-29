@@ -3,6 +3,7 @@
 
 #include <gui_generated/languagesetting_screen/languageSettingViewBase.hpp>
 #include <gui/languagesetting_screen/languageSettingPresenter.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 class languageSettingView : public languageSettingViewBase
 {
@@ -14,6 +15,7 @@ public:
     virtual void handleGestureEvent(const GestureEvent& evt);
 
     void handleSwipeRight();
+    void updateLanguageSelection();
 protected:
 
 private:

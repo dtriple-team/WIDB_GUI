@@ -18,6 +18,7 @@ public:
     ModelListener() : model(0) {}
 
     virtual ~ModelListener() {}
+    virtual void updateClock() {} //rkdalfks
 
     /**
      * Sets the model pointer to point to the Model object. Called automatically
