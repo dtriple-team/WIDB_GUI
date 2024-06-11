@@ -10,104 +10,104 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     switch (typography)
     {
     case Typography::SIZE10:
-        // HanSantteutDotum_Regular_10_4bpp
+        // Pretendard_Regular_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     case Typography::SIZE10_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_10_4bpp
+        // Pretendard_Regular_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     case Typography::SIZE10_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_10_4bpp
+        // Pretendard_Regular_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     case Typography::SIZE16:
-        // HanSantteutDotum_Regular_16_4bpp
+        // Pretendard_Regular_16_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
     case Typography::SIZE16_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_16_4bpp
+        // Pretendard_Regular_16_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
     case Typography::SIZE16_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_16_4bpp
+        // Pretendard_Regular_16_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
     case Typography::SIZE18:
-        // verdana_18_4bpp
+        // Pretendard_Regular_18_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     case Typography::SIZE18_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_18_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+        // Pretendard_Regular_18_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     case Typography::SIZE18_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_18_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+        // Pretendard_Regular_18_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     case Typography::SIZE20:
-        // HanSantteutDotum_Regular_20_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+        // Pretendard_Regular_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
     case Typography::SIZE20_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_20_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+        // Pretendard_Regular_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
     case Typography::SIZE20_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_20_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+        // Pretendard_Regular_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
     case Typography::SIZE24:
-        // HanSantteutDotum_Regular_24_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+        // Pretendard_Regular_24_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
     case Typography::SIZE24_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_24_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+        // Pretendard_Regular_24_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
     case Typography::SIZE24_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_24_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+        // Pretendard_Regular_24_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
     case Typography::SIZE28_BOLD:
-        // HanSantteutDotum_Bold_28_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+        // Pretendard_Bold_28_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     case Typography::SIZE28_BOLD_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Bold_28_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+        // Pretendard_Bold_28_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     case Typography::SIZE28_BOLD_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Bold_28_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+        // Pretendard_Bold_28_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     case Typography::SIZE32:
-        // HanSantteutDotum_Regular_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+        // Pretendard_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::SIZE32_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+        // Pretendard_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::SIZE32_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+        // Pretendard_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::SIZE32_BOLD:
-        // HanSantteutDotum_Bold_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+        // Pretendard_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::SIZE32_BOLD_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Bold_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+        // Pretendard_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::SIZE32_BOLD_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Bold_32_4bpp
+        // Pretendard_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::SIZE65:
+        // Pretendard_Bold_70_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
-    case Typography::SIZE75:
-        // verdanab_65_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
-    case Typography::SIZE75_AUTO_GENERATED_FOR_GB:
-        // verdanab_65_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
-    case Typography::SIZE75_AUTO_GENERATED_FOR_KOREAN:
-        // verdanab_65_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+    case Typography::SIZE65_AUTO_GENERATED_FOR_GB:
+        // Pretendard_Bold_70_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+    case Typography::SIZE65_AUTO_GENERATED_FOR_KOREAN:
+        // Pretendard_Bold_70_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
     case Typography::SCROLLWHEELNOTSELECTED:
-        // HanSantteutDotum_Regular_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+        // Pretendard_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Regular_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+        // Pretendard_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::SCROLLWHEELNOTSELECTED_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Regular_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+        // Pretendard_Regular_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::SCROLLWHEELSELECTED:
-        // HanSantteutDotum_Bold_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+        // Pretendard_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_GB:
-        // HanSantteutDotum_Bold_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+        // Pretendard_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::SCROLLWHEELSELECTED_AUTO_GENERATED_FOR_KOREAN:
-        // HanSantteutDotum_Bold_32_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+        // Pretendard_Bold_32_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     default:
         return 0;
     }

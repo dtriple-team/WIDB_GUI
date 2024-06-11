@@ -1,10 +1,12 @@
 #include <gui/screenbrightnesssetting_screen/screenbrightnessSettingView.hpp>
+#include <gui/model/Model.hpp>
 #include <touchgfx/Color.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <touchgfx/Utils.hpp>
 
 screenbrightnessSettingView::screenbrightnessSettingView()
-	: initialX(0), initialY(0)
+	: slider1ChangedCallback(this, &screenbrightnessSettingView::slider1ChangedHandler),
+	  initialX(0), initialY(0)
 {
 
 }
@@ -12,6 +14,8 @@ screenbrightnessSettingView::screenbrightnessSettingView()
 void screenbrightnessSettingView::setupScreen()
 {
     screenbrightnessSettingViewBase::setupScreen();
+    slider1.setValue(presenter->getSlider1Value());
+    slider1.setNewValueCallback(slider1ChangedCallback);
 }
 
 void screenbrightnessSettingView::tearDownScreen()
@@ -37,4 +41,9 @@ void screenbrightnessSettingView::handleSwipeRight()
 {
     // 화면 전환 코드
     application().gotoscreenSettingScreenWipeTransitionWest();
+}
+
+void screenbrightnessSettingView::slider1ChangedHandler(const Slider& src, int value)
+{
+    presenter->updateSlider1Value(value);
 }

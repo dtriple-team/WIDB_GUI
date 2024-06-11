@@ -7,6 +7,7 @@
 swipedownfromHomeView::swipedownfromHomeView()
 	: toggleButton1ClickedCallback(this, &swipedownfromHomeView::toggleButton1Clicked), //test
 	  toggleButton2ClickedCallback(this, &swipedownfromHomeView::toggleButton2Clicked),
+	  slider1ChangedCallback(this, &swipedownfromHomeView::slider1ChangedHandler),
 	  initialX(0), initialY(0)
 {
 
@@ -19,6 +20,8 @@ void swipedownfromHomeView::setupScreen()
     toggleButton2.setAction(toggleButton2ClickedCallback);
     toggleButton1.forceState(presenter->getToggleButton1State()); //test
     toggleButton2.forceState(presenter->getToggleButton2State()); //test
+    slider1.setValue(presenter->getSlider1Value());
+    slider1.setNewValueCallback(slider1ChangedCallback);
 }
 
 void swipedownfromHomeView::tearDownScreen()
@@ -64,4 +67,9 @@ void swipedownfromHomeView::toggleButton2Clicked(const touchgfx::AbstractButton&
 void swipedownfromHomeView::updateToggleButton2State(bool state)
 {
     toggleButton2.forceState(state);
+}
+
+void swipedownfromHomeView::slider1ChangedHandler(const Slider& src, int value)
+{
+    presenter->updateSlider1Value(value);
 }

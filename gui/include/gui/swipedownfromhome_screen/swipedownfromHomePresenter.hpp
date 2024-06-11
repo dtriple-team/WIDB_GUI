@@ -18,13 +18,16 @@ public:
     virtual void deactivate();
     virtual void notifySwipeUp();
 
-    void updateToggleButton1State(bool state); //test
-    bool getToggleButton1State() const; //test
+    void updateToggleButton1State(bool state);
+    bool getToggleButton1State() const;
     void onToggleButton1StateChanged(bool state);
 
-    void updateToggleButton2State(bool state); //test
-    bool getToggleButton2State() const; //test
+    void updateToggleButton2State(bool state);
+    bool getToggleButton2State() const;
     void onToggleButton2StateChanged(bool state);
+
+    void updateSlider1Value(int value); //test
+    int getSlider1Value() const;
 
     virtual ~swipedownfromHomePresenter() {};
 

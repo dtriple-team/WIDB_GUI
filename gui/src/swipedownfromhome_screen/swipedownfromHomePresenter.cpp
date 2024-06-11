@@ -52,3 +52,13 @@ void swipedownfromHomePresenter::onToggleButton2StateChanged(bool state)
 {
     view.updateToggleButton2State(state);
 }
+
+void swipedownfromHomePresenter::updateSlider1Value(int value)
+{
+	model->setSlider1Value(value);
+}
+
+int swipedownfromHomePresenter::getSlider1Value() const
+{
+	return model->getSlider1Value();
+}

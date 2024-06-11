@@ -18,11 +18,16 @@ public:
     void updateToggleButton2State(bool state); //test
 
     void handleSwipeUp(); //rkdalfks
+
+    void slider1Changed(int value);
 protected:
     Callback<swipedownfromHomeView, const touchgfx::AbstractButton&> toggleButton1ClickedCallback; //test
     Callback<swipedownfromHomeView, const touchgfx::AbstractButton&> toggleButton2ClickedCallback; //test
     void toggleButton1Clicked(const touchgfx::AbstractButton& source); //test
     void toggleButton2Clicked(const touchgfx::AbstractButton& source); //test
+
+    Callback<swipedownfromHomeView, const Slider&, int> slider1ChangedCallback;
+    void slider1ChangedHandler(const Slider& src, int value);
 
 private: //rkdalfks
     int initialX; //rkdalfks

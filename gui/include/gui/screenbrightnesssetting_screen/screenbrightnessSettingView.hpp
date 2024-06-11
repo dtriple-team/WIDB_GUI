@@ -14,7 +14,11 @@ public:
     virtual void handleGestureEvent(const GestureEvent& evt);
 
     void handleSwipeRight();
+
+    void slider1Changed(int value);
 protected:
+    Callback<screenbrightnessSettingView, const Slider&, int> slider1ChangedCallback;
+    void slider1ChangedHandler(const Slider& src, int value);
 
 private:
     int initialX;

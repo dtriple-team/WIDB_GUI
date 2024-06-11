@@ -280,7 +280,7 @@
         <Translation Language="GB">&lt;value&gt;s</Translation>
         <Translation Language="Korean">&lt;value&gt;초</Translation>
       </Text>
-      <Text Id="homescreenClock" Alignment="Center" TypographyId="size75">
+      <Text Id="homescreenClock" Alignment="Center" TypographyId="size65">
         <Translation Language="GB">&lt;&gt;</Translation>
         <Translation Language="Korean">&lt;&gt;</Translation>
       </Text>
@@ -512,49 +512,49 @@
     <TextGroup Id="Unsorted" />
   </Texts>
   <Typographies>
-    <Typography Id="size10" Font="HanSantteutDotum-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size10" Font="Pretendard-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size16" Font="HanSantteutDotum-Regular.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size16" Font="Pretendard-Regular.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size18" Font="verdana.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size18" Font="Pretendard-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size20" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size20" Font="Pretendard-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size24" Font="HanSantteutDotum-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size24" Font="Pretendard-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size28_Bold" Font="HanSantteutDotum-Bold.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Bold.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Bold.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size28_Bold" Font="Pretendard-Bold.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-Bold.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Bold.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size32" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size32" Font="Pretendard-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size32_Bold" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size32_Bold" Font="Pretendard-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="size75" Font="verdanab.ttf" Size="65" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM">
-      <LanguageSetting Language="GB" Font="verdanab.ttf" Size="65" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-      <LanguageSetting Language="Korean" Font="verdanab.ttf" Size="65" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="size65" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM">
+      <LanguageSetting Language="GB" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Bold.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="scrollWheelnotselected" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    <Typography Id="scrollWheelnotselected" Font="Pretendard-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
+      <LanguageSetting Language="GB" Font="Pretendard-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Regular.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     </Typography>
-    <Typography Id="scrollWheelselected" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
-      <LanguageSetting Language="GB" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-      <LanguageSetting Language="Korean" Font="HanSantteutDotum-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    <Typography Id="scrollWheelselected" Font="Pretendard-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9">
+      <LanguageSetting Language="GB" Font="Pretendard-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+      <LanguageSetting Language="Korean" Font="Pretendard-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     </Typography>
   </Typographies>
 </TextDatabase>

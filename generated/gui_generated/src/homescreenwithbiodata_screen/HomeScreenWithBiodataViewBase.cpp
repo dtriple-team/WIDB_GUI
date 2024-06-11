@@ -127,7 +127,7 @@ HomeScreenWithBiodataViewBase::HomeScreenWithBiodataViewBase() :
     digitalClock.setTime24Hour(10, 10, 0);
     HomeScreen.add(digitalClock);
 
-    date.setPosition(28, 52, 98, 24);
+    date.setPosition(22, 52, 98, 24);
     date.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     date.setLinespacing(0);
     touchgfx::Unicode::snprintf(dateBuffer1, DATEBUFFER1_SIZE, "%s", touchgfx::TypedText(T_CURMONTH).getText());

@@ -4,7 +4,8 @@
 Model::Model()
 	: modelListener(0),
 	  toggleButton1State(true), //test
-	  toggleButton2State(true)
+	  toggleButton2State(true),
+	  slider1Value(0)
 {
 }
 
@@ -51,4 +52,14 @@ bool Model::getToggleButton1State() const
 bool Model::getToggleButton2State() const
 {
     return toggleButton2State;
+}
+
+void Model::setSlider1Value(int value) //test
+{
+	slider1Value = value;
+}
+
+int Model::getSlider1Value() const //test
+{
+	return slider1Value;
 }

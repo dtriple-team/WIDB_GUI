@@ -3,6 +3,7 @@
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
+#include <touchgfx/Callback.hpp>
 
 using namespace touchgfx;
 
@@ -26,6 +27,9 @@ public:
     virtual void deactivate();
 
     virtual void notifySwipeRight();
+
+    void updateSlider1Value(int value); //test
+    int getSlider1Value() const;
 
     virtual ~screenbrightnessSettingPresenter() {}
 

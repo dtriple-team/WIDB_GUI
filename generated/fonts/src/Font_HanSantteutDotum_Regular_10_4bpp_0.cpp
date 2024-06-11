@@ -1,7 +1,0 @@
-#include <touchgfx/hal/Types.hpp>
-
-FONT_GLYPH_LOCATION_FLASH_PRAGMA
-KEEP extern const uint8_t unicodes_HanSantteutDotum_Regular_10_4bpp_0[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE = {
-    // Unicode: [0x003F]
-    0xAA, 0x4B, 0x00, 0xA2, 0x00, 0x49, 0x80, 0x04, 0xA0, 0x00, 0x20, 0x00, 0xD0, 0x02
-};

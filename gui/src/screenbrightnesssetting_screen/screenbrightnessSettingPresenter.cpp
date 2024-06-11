@@ -21,3 +21,14 @@ void screenbrightnessSettingPresenter::notifySwipeRight()
 {
 	view.handleSwipeRight();
 }
+
+void screenbrightnessSettingPresenter::updateSlider1Value(int value)
+{
+	model->setSlider1Value(value);
+}
+
+int screenbrightnessSettingPresenter::getSlider1Value() const
+{
+	return model->getSlider1Value();
+}
+
